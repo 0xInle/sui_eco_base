@@ -1,0 +1,6 @@
+*
+!.gitignore
+!app/
+!app/**/*
+app/mail.php
+app/phpmailer/
