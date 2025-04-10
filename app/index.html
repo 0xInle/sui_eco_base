@@ -17,20 +17,34 @@
 <body>
   <div>
     <div class="header container flex">
-  <h1 class="header__title">
-    Sui Eco Base
-  </h1>
-  <h2 class="header__subtitle">
-    Your gateway to every project in the Sui ecosystem.
-  </h2>
-  <div class="header__button-wrapper flex">
-    <button class="header__btn btn-reset">
-      View Projects
-    </button>
-    <button class="header__btn btn-reset">
-      Add Your Project
-    </button>
-  </div>
+  <nav class="header__nav flex">
+    <a href="#" class="header__link header__link-logo link-reset">
+      Sui Eco Base
+    </a>
+    <ul class="header__list list-reset flex">
+      <li class="header__item">
+        <a href="#" class="header__link link-reset">
+          Projects
+        </a>
+      </li>
+      <li class="header__item">
+        <a href="#" class="header__link link-reset">
+          Categories
+        </a>
+      </li>
+    </ul>
+    <div class="header__wrapper">
+      <button class="header__btn header__btn-theme btn-reset">
+        <svg class="header__icon">
+          <use xlink:href="img/sprite.svg#icon-sun"></use>
+        </svg>
+      </button>
+      <input class="header__search" type="text" placeholder="SEARCH FROM PROJECT">
+      <button class="header__btn header__btn-contacts btn-reset">
+        Contacts
+      </button>
+    </div>
+  </nav>
 </div>
 
     <main class="main">
