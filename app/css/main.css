@@ -336,4 +336,96 @@ html {
   width: 14px;
   height: 14px;
   fill: #FF782F;
+}
+
+.project {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.project__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.project__filter {
+  margin-bottom: 30px;
+}
+.project__list {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+.project__btn {
+  border-radius: 8px;
+  padding: 11px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: var(--button-bg-color);
+}
+.project__card-list {
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+.project__card-item {
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  color: var(--text-color);
+}
+.project__card-logo {
+  margin-bottom: 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-image: url("/img/logo-walrus.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project__card-name {
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.project__card-category {
+  margin-bottom: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 4px 6px 3px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.project__card-descr {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--accent-color);
+  min-height: 110px;
+}
+.project__social-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-color);
+}
+.project__social-item {
+  width: 24px;
+  height: 24px;
+}
+.project__social-item:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
