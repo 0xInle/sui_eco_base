@@ -7,7 +7,7 @@
   --bg-color: #0c0f1d;
   --text-color: #f7f7f7;
   --subtext-color: #f7f7f780;
-  --btn-bg-color: #97f0e5;
+  --subaccent-color: #97f0e5;
   --accent-color: #c684f6;
   --button-bg-color: #292c3b;
 }
@@ -193,7 +193,7 @@ html {
   font-family: var(--second-family);
   font-weight: 900;
   font-size: 24px;
-  color: var(--accent-color);
+  color: var(--subaccent-color);
   background-color: transparent;
 }
 .header__item:not(:last-child) {
@@ -348,6 +348,7 @@ html {
 .project__title {
   margin: 0 auto;
   margin-bottom: 20px;
+  padding-top: 20px;
   font-weight: 900;
   font-size: 36px;
   text-transform: uppercase;
