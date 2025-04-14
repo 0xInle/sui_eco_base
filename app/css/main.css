@@ -373,9 +373,22 @@ html {
   color: var(--text-color);
   background-color: var(--button-bg-color);
 }
+.project__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .project__card-list {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 30px;
   gap: 30px;
 }
 .project__card-item {
@@ -416,6 +429,14 @@ html {
   margin-bottom: 20px;
   border-bottom: 1px solid var(--accent-color);
   min-height: 110px;
+}
+.project__card-btn {
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: var(--button-bg-color);
 }
 .project__social-icon {
   width: 24px;

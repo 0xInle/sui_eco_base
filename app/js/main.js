@@ -283,9 +283,15 @@ const projects = [{
 function generateProjectCards(projects) {
   const projectsList = document.querySelector('.project__card-list');
   projectsList.innerHTML = '';
-  projects.forEach(project => {
+
+  // Сортировка проектов по имени
+  projects.sort((a, b) => a.name.localeCompare(b.name));
+  projects.forEach((project, index) => {
     const projectCard = document.createElement('li');
     projectCard.classList.add('project__card-item');
+    if (index >= 12) {
+      projectCard.classList.add('hidden');
+    }
     projectCard.innerHTML = `
       <div class="project__card-wrapper">
         <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
@@ -329,7 +335,20 @@ function generateProjectCards(projects) {
     `;
     projectsList.appendChild(projectCard);
   });
+  const showMoreBtn = document.querySelector('.project__card-btn');
+  if (projects.length > 12) {
+    showMoreBtn.style.display = 'block';
+  }
 }
+document.querySelector('.project__card-btn').addEventListener('click', function () {
+  const hiddenCards = document.querySelectorAll('.project__card-item.hidden');
+  for (let i = 0; i < 4 && i < hiddenCards.length; i++) {
+    hiddenCards[i].classList.remove('hidden');
+  }
+  if (document.querySelectorAll('.project__card-item.hidden').length === 0) {
+    this.style.display = 'none';
+  }
+});
 generateProjectCards(projects);
 /******/ })()
 ;
