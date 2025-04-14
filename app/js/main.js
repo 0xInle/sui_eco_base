@@ -103,7 +103,7 @@ const projects = [{
   logo: "img/logo-deepbook.webp"
 }, {
   name: "WinX",
-  category: "GameFi",
+  category: "GambleFi",
   description: "Decentralized casino.",
   site: "https://winx.io/",
   x: "https://x.com/WinX_io",
@@ -175,7 +175,7 @@ const projects = [{
   logo: "img/logo-bluefin.webp"
 }, {
   name: "DoubleUp",
-  category: "GameFi",
+  category: "GambleFi",
   description: "Decentralized casino with transparent on-chain games.",
   site: "https://www.doubleup.fun/",
   x: "https://x.com/doubleup_app",
@@ -229,7 +229,108 @@ const projects = [{
   x: "https://x.com/KriyaDEX",
   discord: "https://discord.com/invite/kriya",
   logo: "img/logo-kriya.webp"
+}, {
+  name: "Bucket Protocol",
+  category: "DeFi",
+  description: "Decentralized stablecoin protocol.",
+  site: "https://www.bucketprotocol.io/",
+  x: "https://x.com/bucket_protocol",
+  discord: "https://discord.com/invite/nYCnNJE6Tr",
+  logo: "img/logo-bucketprotocol.webp"
+}, {
+  name: "Sui Name Service",
+  category: "SocialFi",
+  description: "Decentralized name service. Allows domain registration and linking to wallets and contracts.",
+  site: "https://suins.io/",
+  x: "https://x.com/suinsdapp",
+  discord: "https://discord.com/invite/suins",
+  logo: "img/logo-suinameservice.webp"
+}, {
+  name: "Cetus",
+  category: "DeFi",
+  description: "Decentralized exchange with concentrated liquidity, enabling efficient trading, range orders, and liquidity as a service.",
+  site: "https://www.cetus.zone/",
+  x: "https://x.com/CetusProtocol",
+  discord: "https://discord.com/invite/cetusprotocol",
+  logo: "img/logo-cetus.webp"
+}, {
+  name: "Lotus",
+  category: "DeFi",
+  description: "Trading strategy protocol.",
+  site: "https://beta.lotusfinance.io/",
+  x: "https://x.com/Lotusfinance_io",
+  discord: "https://discord.com/invite/lotusfinance",
+  logo: "img/logo-lotus.webp"
+}, {
+  name: "Full Sail",
+  category: "DeFi",
+  description: "Вecentralized exchange introduces an innovative ve(4,4) tokenomics model.",
+  site: "https://www.fullsail.finance/",
+  x: "https://x.com/fullsailfi",
+  discord: "https://discord.com/invite/fullsailfi",
+  logo: "img/logo-fullsail.webp"
+}, {
+  name: "Soundness",
+  category: "DeFi",
+  description: "Decentralized data verification layer.",
+  site: "https://soundness.xyz/",
+  x: "https://x.com/SoundnessLabs",
+  discord: "https://discord.com/invite/E7YeREX6aU",
+  logo: "img/logo-soundness.webp"
 }];
+
+// Функция для генерации карточек
+function generateProjectCards(projects) {
+  const projectsList = document.querySelector('.project__card-list');
+  projectsList.innerHTML = '';
+  projects.forEach(project => {
+    const projectCard = document.createElement('li');
+    projectCard.classList.add('project__card-item');
+    projectCard.innerHTML = `
+      <div class="project__card-wrapper">
+        <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
+        <div class="project__card-name">
+          ${project.name}
+        </div>
+        <div class="project__card-category">
+          ${project.category}
+        </div>
+        <div class="project__card-descr">
+          ${project.description}
+        </div>
+      </div>
+      <div class="project__social-wrapper">
+        <ul class="project__social-list list-reset flex">
+          <li class="project__social-item">
+            <a href="${project.site}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-site"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="project__social-item">
+            <a href="${project.x}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-x"></use>
+              </svg>
+            </a>
+          </li>
+          ${project.discord ? `
+          <li class="project__social-item">
+            <a href="${project.discord}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-ds"></use>
+              </svg>
+            </a>
+          </li>
+          ` : ''}
+        </ul>
+      </div>
+    `;
+    projectsList.appendChild(projectCard);
+  });
+}
+generateProjectCards(projects);
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
