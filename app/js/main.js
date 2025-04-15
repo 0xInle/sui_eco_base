@@ -353,7 +353,7 @@ generateProjectCards(projects);
 
 // Открытие и закрытие блока контактов
 const btnOpen = document.querySelector('.header__btn-contacts');
-const btnClose = document.querySelector('.modal__btn');
+const btnClose = document.querySelector('.modal__btn-close');
 const contacts = document.querySelector('.modal');
 btnOpen.addEventListener('click', () => {
   contacts.classList.remove('hidden');
