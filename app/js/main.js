@@ -350,6 +350,21 @@ document.querySelector('.project__card-btn').addEventListener('click', function 
   }
 });
 generateProjectCards(projects);
+
+// Открытие и закрытие блока контактов
+const btnOpen = document.querySelector('.header__btn-contacts');
+const btnClose = document.querySelector('.modal__btn');
+const contacts = document.querySelector('.modal');
+btnOpen.addEventListener('click', () => {
+  contacts.classList.remove('hidden');
+  contacts.classList.add('active');
+  document.body.classList.add('blurred');
+});
+btnClose.addEventListener('click', () => {
+  contacts.classList.add('hidden');
+  contacts.classList.remove('active');
+  document.body.classList.remove('blurred');
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
