@@ -168,7 +168,8 @@ html {
 }
 
 .header {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header__nav {
   -webkit-box-align: center;
@@ -192,7 +193,7 @@ html {
   padding: 0;
   font-family: var(--second-family);
   font-weight: 900;
-  font-size: 24px;
+  font-size: 32px;
   color: var(--subaccent-color);
   background-color: transparent;
 }
@@ -429,6 +430,7 @@ html {
   margin-bottom: 20px;
   border-bottom: 1px solid var(--accent-color);
   min-height: 110px;
+  font-size: 14px;
 }
 .project__card-btn {
   border-radius: 8px;
@@ -449,4 +451,50 @@ html {
 }
 .project__social-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.footer {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: calc(100% - 60px);
+  height: 1px;
+  background-color: var(--accent-color);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.footer__link {
+  border-radius: 0;
+  padding: 0;
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--subaccent-color);
+  background-color: transparent;
+}
+.footer__text {
+  margin: 0;
+  font-size: 12px;
+  color: var(--subtext-color);
+}
+.footer__btn {
+  border-radius: 8px;
+  padding: 11px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: var(--button-bg-color);
 }/*# sourceMappingURL=main.css.map */
