@@ -356,19 +356,13 @@ body.blurred .wrapper {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-@media (any-hover: hover) {
-  .hero__name:hover {
-    color: var(--subaccent-color);
-  }
-}
-.hero__name:focus {
-  color: var(--subaccent-color);
-}
 .hero__total {
   font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
   color: var(--subtext-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero__last {
   font-weight: 300;
@@ -397,11 +391,37 @@ body.blurred .wrapper {
 }
 .hero__icon {
   position: absolute;
-  right: -15px;
   top: -5px;
   width: 14px;
   height: 14px;
   fill: #FF782F;
+}
+.hero__btn {
+  outline: none;
+  border: 1px solid var(--button-bg-color);
+  border-radius: 8px;
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: var(--button-bg-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .hero__btn:hover {
+    border: 1px solid var(--subaccent-color);
+  }
+  .hero__btn:hover .hero__name {
+    color: var(--subaccent-color);
+  }
+}
+.hero__btn:focus {
+  border: 1px solid var(--subaccent-color);
+}
+.hero__btn:focus .hero__name {
+  color: var(--subaccent-color);
 }
 
 .project {
@@ -622,7 +642,10 @@ body.blurred .wrapper {
   position: fixed;
   left: 50%;
   top: 50%;
-  z-index: 2;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -632,13 +655,16 @@ body.blurred .wrapper {
   width: 50%;
   background-color: var(--bg-color);
   opacity: 0;
+  visibility: hidden;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  pointer-events: all;
+  pointer-events: none;
 }
 .modal.active {
+  z-index: 1000;
   opacity: 1;
+  visibility: visible;
   pointer-events: all;
 }
 .modal__text {
