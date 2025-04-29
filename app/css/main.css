@@ -416,12 +416,18 @@ body.blurred .wrapper {
   .hero__btn:hover .hero__name {
     color: var(--subaccent-color);
   }
+  .hero__btn:hover .hero__total {
+    color: var(--text-color);
+  }
 }
 .hero__btn:focus {
   border: 1px solid var(--subaccent-color);
 }
 .hero__btn:focus .hero__name {
   color: var(--subaccent-color);
+}
+.hero__btn:focus .hero__total {
+  color: var(--text-color);
 }
 
 .project {
@@ -488,11 +494,26 @@ body.blurred .wrapper {
   gap: 30px;
 }
 .project__card-item {
+  outline: none;
   border: 1px solid var(--accent-color);
   border-radius: 8px;
   padding: 20px;
   width: 300px;
   color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.project__card-item:focus {
+  border-color: var(--subaccent-color);
+}
+.project__card-item:focus .project__card-logo {
+  border-color: var(--subaccent-color);
+}
+.project__card-item:focus .project__card-category {
+  border-color: var(--subaccent-color);
+}
+.project__card-item:focus .project__card-descr {
+  border-color: var(--subaccent-color);
 }
 .project__card-logo {
   margin-bottom: 10px;
@@ -503,6 +524,8 @@ body.blurred .wrapper {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .project__card-name {
   margin-bottom: 10px;
@@ -519,6 +542,8 @@ body.blurred .wrapper {
   max-width: fit-content;
   font-size: 10px;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .project__card-descr {
   margin-bottom: 20px;
@@ -526,6 +551,8 @@ body.blurred .wrapper {
   min-height: 110px;
   font-size: 12px;
   line-height: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .project__card-btn {
   -ms-flex-item-align: center;

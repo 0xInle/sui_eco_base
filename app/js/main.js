@@ -303,8 +303,32 @@ const projects = [{
   logo: "img/logo-slushwallet.webp"
 }];
 
-// Функция для генерации карточек
+// Функция перемещения к последнему добавленному проекту на сайт
+const lastProject = projects[projects.length - 1];
+document.querySelector('.hero__name').textContent = lastProject.name;
+document.querySelector('.hero__btn').addEventListener('click', () => {
+  const projectName = document.querySelector('.hero__name').textContent.trim();
+  document.querySelectorAll('.project__card-item.hidden').forEach(card => {
+    card.classList.remove('hidden');
+  });
+  const cards = document.querySelectorAll('.project__card-item');
+  const targetCard = Array.from(cards).find(card => {
+    return card.querySelector('.project__card-name')?.textContent.trim() === projectName;
+  });
+  if (targetCard) {
+    targetCard.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+    targetCard.focus();
+  }
+  const showMoreBtn = document.querySelector('.project__card-btn');
+  if (showMoreBtn) {
+    showMoreBtn.style.display = 'none';
+  }
+});
 
+// Функция для генерации карточек
 function generateProjectCards(projectsToRender) {
   const projectsList = document.querySelector('.project__card-list');
   const showMoreBtn = document.querySelector('.project__card-btn');
@@ -313,6 +337,7 @@ function generateProjectCards(projectsToRender) {
   projectsToRender.forEach((project, index) => {
     const projectCard = document.createElement('li');
     projectCard.classList.add('project__card-item');
+    projectCard.setAttribute('tabindex', '0');
     if (index >= 12) {
       projectCard.classList.add('hidden');
     }
