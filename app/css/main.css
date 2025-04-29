@@ -642,10 +642,7 @@ body.blurred .wrapper {
   position: fixed;
   left: 50%;
   top: 50%;
-  z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -654,18 +651,12 @@ body.blurred .wrapper {
   padding: 30px;
   width: 50%;
   background-color: var(--bg-color);
-  opacity: 0;
-  visibility: hidden;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  pointer-events: none;
 }
 .modal.active {
-  z-index: 1000;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+  display: block;
 }
 .modal__text {
   margin: 0;
