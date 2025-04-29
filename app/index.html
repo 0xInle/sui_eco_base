@@ -21,25 +21,16 @@
     <a href="#" class="header__link header__link-logo link-reset" tabindex="-1">
       Sui Eco Base
     </a>
-    <!-- <ul class="header__list list-reset flex">
-      <li class="header__item">
-        <a href="#" class="header__link link-reset">
-          Projects
-        </a>
-      </li>
-      <li class="header__item">
-        <a href="#" class="header__link link-reset">
-          Categories
-        </a>
-      </li>
-    </ul> -->
     <div class="header__wrapper">
       <button class="header__btn header__btn-theme btn-reset">
         <svg class="header__icon">
           <use xlink:href="img/sprite.svg#icon-sun"></use>
         </svg>
       </button>
-      <input class="header__search" type="text" placeholder="SEARCH FROM PROJECT">
+      <div>
+        <input class="header__search" type="text" placeholder="SEARCH FROM PROJECT">
+        <div class="header__error">Project not found</div>
+      </div>
       <button class="header__btn header__btn-contacts btn-reset">
         Contacts
       </button>
@@ -78,17 +69,6 @@
         Last project
       </div>
     </button>
-    <!-- <div class="hero__count">
-      <a href="#" class="hero__name link-reset">
-        Full Sail
-        <svg class="hero__icon">
-          <use xlink:href="img/sprite.svg#icon-fire"></use>
-        </svg>
-      </a href="#">
-      <div class="hero__total">
-        Last project
-      </div>
-    </div> -->
   </div>
   <div class="hero__slider">
     Sui Eco Base
@@ -139,6 +119,11 @@
       <li class="project__item">
         <button class="project__btn btn-reset">
           Wallet
+        </button>
+      </li>
+      <li class="project__item">
+        <button class="project__btn btn-reset">
+          Infrastructure
         </button>
       </li>
       <li class="project__item">

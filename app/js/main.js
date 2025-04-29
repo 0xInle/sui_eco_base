@@ -434,6 +434,58 @@ items.sort((a, b) => {
   return textA.localeCompare(textB);
 });
 items.forEach(item => list.appendChild(item));
+
+// Поиск по карточкам
+const searchInput = document.querySelector('.header__search');
+const headerError = document.querySelector('.header__error');
+searchInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const value = searchInput.value.trim();
+    const isValid = /^[a-zA-Z0-9 ]+$/.test(value);
+    if (!isValid) {
+      searchInput.classList.add('input--invalid');
+      headerError.style.opacity = "0";
+      return;
+    } else {
+      searchInput.classList.remove('input--invalid');
+      headerError.style.opacity = "0";
+    }
+    const query = value.toLowerCase();
+    document.querySelectorAll('.project__card-item.hidden').forEach(card => {
+      card.classList.remove('hidden');
+    });
+    const cards = document.querySelectorAll('.project__card-item');
+    const targetCard = Array.from(cards).find(card => {
+      const name = card.querySelector('.project__card-name')?.textContent.trim().toLowerCase();
+      return name === query;
+    });
+    if (targetCard) {
+      const showMoreBtn = document.querySelector('.project__card-btn');
+      if (showMoreBtn) showMoreBtn.style.display = 'none';
+      targetCard.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      targetCard.focus();
+      headerError.style.opacity = "0";
+    } else {
+      searchInput.classList.add('input--invalid');
+      headerError.style.opacity = "1";
+    }
+  }
+});
+searchInput.addEventListener('input', () => {
+  const value = searchInput.value;
+  const isValid = /^[a-zA-Z0-9 ]*$/.test(value);
+  if (!isValid) {
+    searchInput.classList.add('input--invalid');
+    headerError.style.opacity = "0";
+  } else {
+    searchInput.classList.remove('input--invalid');
+    headerError.style.opacity = "0";
+  }
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
