@@ -480,9 +480,6 @@ body.blurred .wrapper {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 .project__card-list {
   -ms-flex-wrap: wrap;
@@ -531,9 +528,13 @@ body.blurred .wrapper {
   line-height: 2;
 }
 .project__card-btn {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   outline: none;
   border-radius: 8px;
   padding: 20px 40px;
+  max-width: 200px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--text-color);

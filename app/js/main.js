@@ -222,14 +222,6 @@ const projects = [{
   discord: "https://discord.com/invite/kriya",
   logo: "img/logo-kriya.webp"
 }, {
-  name: "Kriya",
-  category: "DeFi",
-  description: "Comprehensive DeFi protocol offering AMM swaps, limit orders, vaults, and leveraged perpetuals.",
-  site: "https://kriya.finance/",
-  x: "https://x.com/KriyaDEX",
-  discord: "https://discord.com/invite/kriya",
-  logo: "img/logo-kriya.webp"
-}, {
   name: "Bucket Protocol",
   category: "DeFi",
   description: "Decentralized stablecoin protocol.",
@@ -271,22 +263,54 @@ const projects = [{
   logo: "img/logo-fullsail.webp"
 }, {
   name: "Soundness",
-  category: "DeFi",
+  category: "Infrastructure",
   description: "Decentralized data verification layer.",
   site: "https://soundness.xyz/",
   x: "https://x.com/SoundnessLabs",
   discord: "https://discord.com/invite/E7YeREX6aU",
   logo: "img/logo-soundness.webp"
+}, {
+  name: "Sui Bridge",
+  category: "Bridge",
+  description: "Secure cross-chain asset transfers in the Sui network.",
+  site: "https://bridge.sui.io/",
+  x: "https://x.com/SuiNetwork",
+  discord: "https://discord.com/invite/sui",
+  logo: "img/logo-sui.webp"
+}, {
+  name: "Cosmocadia",
+  category: "GameFi",
+  description: "Cosmocadia is a cooperative sandbox farming game in which players grow land and trade NFTs.",
+  site: "https://www.cosmocadia.io/",
+  x: "https://x.com/Cosmocadia",
+  discord: "https://discord.com/invite/cosmocadia",
+  logo: "img/logo-сosmocadia.webp"
+}, {
+  name: "TradePort",
+  category: "Nft Marketplace",
+  description: "Multichain trading platform.",
+  site: "https://www.tradeport.xyz/",
+  x: "https://x.com/tradeportxyz",
+  discord: "https://discord.com/invite/vna9xzdDK4",
+  logo: "img/logo-tradeport.webp"
+}, {
+  name: "Slush Wallet",
+  category: "Wallet",
+  description: "Multi-platform wallet for NFTs, DeFi, and crypto with zkLogin support..",
+  site: "https://slush.app/",
+  x: "https://x.com/SlushWallet",
+  discord: "https://discord.com/invite/sui",
+  logo: "img/logo-slushwallet.webp"
 }];
 
 // Функция для генерации карточек
-function generateProjectCards(projects) {
-  const projectsList = document.querySelector('.project__card-list');
-  projectsList.innerHTML = '';
 
-  // Сортировка проектов по имени
-  projects.sort((a, b) => a.name.localeCompare(b.name));
-  projects.forEach((project, index) => {
+function generateProjectCards(projectsToRender) {
+  const projectsList = document.querySelector('.project__card-list');
+  const showMoreBtn = document.querySelector('.project__card-btn');
+  projectsList.innerHTML = '';
+  projectsToRender.sort((a, b) => a.name.localeCompare(b.name));
+  projectsToRender.forEach((project, index) => {
     const projectCard = document.createElement('li');
     projectCard.classList.add('project__card-item');
     if (index >= 12) {
@@ -295,15 +319,9 @@ function generateProjectCards(projects) {
     projectCard.innerHTML = `
       <div class="project__card-wrapper">
         <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
-        <div class="project__card-name">
-          ${project.name}
-        </div>
-        <div class="project__card-category">
-          ${project.category}
-        </div>
-        <div class="project__card-descr">
-          ${project.description}
-        </div>
+        <div class="project__card-name">${project.name}</div>
+        <div class="project__card-category">${project.category}</div>
+        <div class="project__card-descr">${project.description}</div>
       </div>
       <div class="project__social-wrapper">
         <ul class="project__social-list list-reset flex">
@@ -328,16 +346,16 @@ function generateProjectCards(projects) {
                 <use xlink:href="img/sprite.svg#icon-ds"></use>
               </svg>
             </a>
-          </li>
-          ` : ''}
+          </li>` : ''}
         </ul>
       </div>
     `;
     projectsList.appendChild(projectCard);
   });
-  const showMoreBtn = document.querySelector('.project__card-btn');
-  if (projects.length > 12) {
+  if (projectsToRender.length > 12) {
     showMoreBtn.style.display = 'block';
+  } else {
+    showMoreBtn.style.display = 'none';
   }
 }
 document.querySelector('.project__card-btn').addEventListener('click', function () {
@@ -365,6 +383,32 @@ btnClose.addEventListener('click', () => {
   contacts.classList.remove('active');
   document.body.classList.remove('blurred');
 });
+
+// Сортировка карточек при нажатии на кнопку
+const filterButtons = document.querySelectorAll('.project__btn');
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.textContent.trim().toLowerCase();
+    if (category === 'all projects') {
+      generateProjectCards(projects);
+    } else {
+      const filteredProjects = projects.filter(p => p.category.toLowerCase() === category);
+      generateProjectCards(filteredProjects);
+    }
+  });
+});
+
+// Сортировка кнопок по имени
+const list = document.querySelector('.project__list');
+const items = Array.from(list.children);
+
+// Сортируем по тексту кнопки
+items.sort((a, b) => {
+  const textA = a.textContent.trim().toLowerCase();
+  const textB = b.textContent.trim().toLowerCase();
+  return textA.localeCompare(textB);
+});
+items.forEach(item => list.appendChild(item));
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
