@@ -397,16 +397,53 @@ generateProjectCards(projects);
 // Открытие и закрытие блока контактов
 const btnOpen = document.querySelector('.header__btn-contacts');
 const btnClose = document.querySelector('.modal__btn-close');
-const contacts = document.querySelector('.modal');
-btnOpen.addEventListener('click', () => {
-  contacts.classList.remove('hidden');
-  contacts.classList.add('active');
+const modal = document.querySelector('.modal');
+let removeTrap = null;
+function trapFocus(element) {
+  const focusableElements = element.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])');
+  const firstFocusableElement = focusableElements[0];
+  const lastFocusableElement = focusableElements[focusableElements.length - 1];
+  function handleTrap(e) {
+    if (e.key === 'Tab') {
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusableElement) {
+          e.preventDefault();
+          lastFocusableElement.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusableElement) {
+          e.preventDefault();
+          firstFocusableElement.focus();
+        }
+      }
+    }
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  }
+  element.addEventListener('keydown', handleTrap);
+  return () => element.removeEventListener('keydown', handleTrap);
+}
+function openModal() {
+  modal.classList.remove('hidden');
+  modal.classList.add('active');
   document.body.classList.add('blurred');
-});
-btnClose.addEventListener('click', () => {
-  contacts.classList.add('hidden');
-  contacts.classList.remove('active');
+  btnClose.focus();
+  removeTrap = trapFocus(modal);
+}
+function closeModal() {
+  modal.classList.add('hidden');
+  modal.classList.remove('active');
   document.body.classList.remove('blurred');
+  btnOpen.focus();
+  if (removeTrap) removeTrap();
+}
+btnOpen.addEventListener('click', openModal);
+btnClose.addEventListener('click', closeModal);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) {
+    closeModal();
+  }
 });
 
 // Сортировка карточек при нажатии на кнопку

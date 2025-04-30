@@ -159,7 +159,7 @@
 </footer>
 
   </div>
-  <div class="modal flex">
+  <div class="modal flex" tabindex="-1">
   <p class="modal__text modal__text">
     Interested in a partnership?
   </p>
@@ -167,29 +167,29 @@
     Contact me if you have any ideas for improving the project.
   </p>
   <ul class="modal__list list-reset flex">
-    <li class="modal__item">
-      <a href="#">
+    <li class="modal__item" tabindex="0">
+      <a href="#" class="modal__link link-reset" tabindex="-1">
         <svg class="modal__icon">
           <use xlink:href="img/sprite.svg#icon-tg"></use>
         </svg>
       </a>
     </li>
-    <li class="modal__item">
-      <a href="#">
+    <li class="modal__item" tabindex="0">
+      <a href="#" class="modal__link link-reset" tabindex="-1">
         <svg class="modal__icon">
           <use xlink:href="img/sprite.svg#icon-x"></use>
         </svg>
       </a>
     </li>
-    <li class="modal__item">
-      <a href="#">
+    <li class="modal__item" tabindex="0">
+      <a href="#" class="modal__link link-reset" tabindex="-1">
         <svg class="modal__icon">
           <use xlink:href="img/sprite.svg#icon-mail"></use>
         </svg>
       </a>
     </li>
   </ul>
-  <button class="modal__btn btn-reset">
+  <button class="modal__btn modal__btn-form btn-reset" tabindex="-1">
     Fiil the form
   </button>
   <button class="modal__btn modal__btn-close btn-reset">
