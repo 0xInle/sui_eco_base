@@ -734,17 +734,17 @@ body.blurred .wrapper {
 }
 @media (any-hover: hover) {
   .modal__item:hover {
-    border: 1px solid var(--accent-color);
+    background-color: var(--subaccent-color);
   }
   .modal__item:hover .modal__icon {
-    fill: var(--accent-color);
+    fill: var(--bg-color);
   }
 }
 .modal__item:focus {
-  border: 1px solid var(--accent-color);
+  background-color: var(--subaccent-color);
 }
 .modal__item:focus .modal__icon {
-  fill: var(--accent-color);
+  fill: var(--bg-color);
 }
 .modal__link {
   outline: none;
@@ -788,11 +788,26 @@ body.blurred .wrapper {
   position: absolute;
   right: 30px;
   top: 30px;
-  padding: 0;
+  border: 1px solid var(--subaccent-color);
+  border-radius: 8px;
+  padding: 10px 10px 6px;
   stroke: var(--subaccent-color);
 }
+@media (any-hover: hover) {
+  .modal__btn-close:hover {
+    background-color: var(--subaccent-color);
+  }
+  .modal__btn-close:hover .modal__icon-close {
+    stroke: var(--bg-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.modal__btn-close:focus {
+  background-color: var(--subaccent-color);
+}
 .modal__btn-close:focus .modal__icon-close {
-  stroke: var(--accent-color);
+  stroke: var(--bg-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
