@@ -523,6 +523,34 @@ searchInput.addEventListener('input', () => {
     headerError.style.opacity = "0";
   }
 });
+
+// Функионал кнопки с донатами
+const donateBtn = document.getElementById('donateBtn');
+const walletAddress = '0xfc6b1e4fa152b77edbac464dfd444ec275206f77f245eab0328e99e85a75ff77';
+let copiedTimeout;
+donateBtn.addEventListener('mouseenter', () => {
+  if (!donateBtn.classList.contains('show-copied')) {
+    donateBtn.classList.add('show-wallet');
+  }
+});
+donateBtn.addEventListener('mouseleave', () => {
+  if (!donateBtn.classList.contains('show-copied')) {
+    donateBtn.classList.remove('show-wallet');
+  }
+});
+donateBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(walletAddress).then(() => {
+    donateBtn.classList.remove('show-wallet');
+    donateBtn.classList.add('show-copied');
+    clearTimeout(copiedTimeout);
+    copiedTimeout = setTimeout(() => {
+      donateBtn.classList.remove('show-copied');
+      donateBtn.classList.add('show-wallet');
+    }, 1000);
+  }).catch(err => {
+    console.error('Clipboard copy failed:', err);
+  });
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

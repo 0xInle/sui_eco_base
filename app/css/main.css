@@ -515,7 +515,7 @@ body.blurred .wrapper {
 }
 .project__card-item {
   outline: none;
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   border-radius: 8px;
   padding: 20px;
   width: 300px;
@@ -554,7 +554,7 @@ body.blurred .wrapper {
 }
 .project__card-category {
   margin-bottom: 10px;
-  border: 1px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   border-radius: 8px;
   padding: 4px 6px 3px;
   max-width: -webkit-fit-content;
@@ -567,7 +567,7 @@ body.blurred .wrapper {
 }
 .project__card-descr {
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
   min-height: 110px;
   font-size: 12px;
   line-height: 2;
@@ -621,7 +621,7 @@ body.blurred .wrapper {
   -ms-flex-pack: center;
   justify-content: center;
   outline: none;
-  border: 1px solid var(--text-color);
+  border: 2px solid var(--text-color);
   border-radius: 8px;
   padding: 8px;
   width: 100%;
@@ -631,7 +631,7 @@ body.blurred .wrapper {
 }
 @media (any-hover: hover) {
   .project__social-link:hover {
-    border: 1px solid var(--subaccent-color);
+    border: 2px solid var(--subaccent-color);
     background-color: var(--subaccent-color);
   }
   .project__social-link:hover .project__social-icon {
@@ -641,7 +641,7 @@ body.blurred .wrapper {
   }
 }
 .project__social-link:focus {
-  border: 1px solid var(--subaccent-color);
+  border: 2px solid var(--subaccent-color);
   background-color: var(--subaccent-color);
 }
 .project__social-link:focus .project__social-icon {
@@ -687,26 +687,65 @@ body.blurred .wrapper {
   font-size: 12px;
   color: var(--subtext-color);
 }
-.footer__btn {
-  outline: none;
+.footer__donate-btn {
+  position: relative;
+  border: none;
   border-radius: 8px;
-  padding: 11px 30px;
+  width: 261px;
+  height: 38px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--bg-color);
   background-color: var(--subaccent-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-@media (any-hover: hover) {
-  .footer__btn:hover {
-    color: var(--bg-color);
-    background-color: var(--accent-color);
-  }
+.footer__donate-btn:hover {
+  background-color: var(--text-color);
 }
-.footer__btn:focus {
-  color: var(--bg-color);
-  background-color: var(--accent-color);
+.footer__donate-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.footer__donate-text--default {
+  opacity: 1;
+  pointer-events: auto;
+}
+.footer__donate-text--wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer__donate-btn.show-wallet .footer__donate-text--default, .footer__donate-btn.show-copied .footer__donate-text--default {
+  opacity: 0;
+  pointer-events: none;
+}
+.footer__donate-btn.show-wallet .footer__donate-text--wallet {
+  opacity: 1;
+  pointer-events: auto;
+}
+.footer__donate-btn.show-copied .footer__donate-text--copied {
+  opacity: 1;
+  pointer-events: auto;
+}
+.footer__icon {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  fill: #4da2ff;
 }
 
 .modal {
