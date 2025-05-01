@@ -27,7 +27,7 @@
           <use xlink:href="img/sprite.svg#icon-sun"></use>
         </svg>
       </button>
-      <div>
+      <div class="header__container">
         <input class="header__search" type="text" placeholder="SEARCH FROM PROJECT">
         <div class="header__error">Project not found</div>
       </div>
@@ -50,25 +50,27 @@
     <p class="hero__text">
       Explore the Sui ecosystem, discover promising projects and hidden gems at the earliest stages of their development.
     </p>
-    <div class="hero__count">
-      <div class="hero__number">
-        314
+    <div class="hero__wrapper">
+      <div class="hero__count">
+        <div class="hero__number">
+          314
+        </div>
+        <div class="hero__total">
+          Total projects
+        </div>
       </div>
-      <div class="hero__total">
-        Total projects
-      </div>
+      <button class="hero__btn btn-reset">
+        <div class="hero__name">
+          Full Sail
+          <svg class="hero__icon">
+            <use xlink:href="img/sprite.svg#icon-fire"></use>
+          </svg>
+        </div>
+        <div class="hero__total">
+          Last project
+        </div>
+      </button>
     </div>
-    <button class="hero__btn btn-reset">
-      <div class="hero__name">
-        Full Sail
-        <svg class="hero__icon">
-          <use xlink:href="img/sprite.svg#icon-fire"></use>
-        </svg>
-      </div>
-      <div class="hero__total">
-        Last project
-      </div>
-    </button>
   </div>
   <!-- <div class="hero__logo">
     Sui Eco Base
@@ -149,7 +151,7 @@
       © 2025 Sui Projects Hub
     </p>
     <p class="footer__text">
-      Cut the noise. Discover real Sui projects that ship.
+      Solo-built. Discover real Sui projects that ship.
     </p>
   </div>
   <div class="footer__right">
