@@ -241,13 +241,13 @@ body.blurred .wrapper {
 @media (any-hover: hover) {
   .header__btn:hover {
     color: var(--bg-color);
-    background-color: var(--text-color);
+    background-color: var(--subaccent-color);
   }
 }
 .header__btn:focus {
   outline: none;
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--subaccent-color);
 }
 .header__btn-theme {
   display: -webkit-box;
@@ -301,11 +301,11 @@ body.blurred .wrapper {
 }
 @media (any-hover: hover) {
   .header__search:hover {
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--subaccent-color);
   }
 }
 .header__search:focus {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--subaccent-color);
 }
 .header__error {
   position: absolute;
@@ -481,12 +481,12 @@ body.blurred .wrapper {
 @media (any-hover: hover) {
   .project__btn:hover {
     color: var(--bg-color);
-    background-color: var(--text-color);
+    background-color: var(--subaccent-color);
   }
 }
 .project__btn:focus {
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--subaccent-color);
 }
 .project__wrapper {
   display: -webkit-box;
@@ -582,12 +582,12 @@ body.blurred .wrapper {
 @media (any-hover: hover) {
   .project__card-btn:hover {
     color: var(--bg-color);
-    background-color: var(--text-color);
+    background-color: var(--subaccent-color);
   }
 }
 .project__card-btn:focus {
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--subaccent-color);
 }
 .project__social-icon {
   width: 24px;
@@ -686,13 +686,13 @@ body.blurred .wrapper {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--bg-color);
-  background-color: var(--subaccent-color);
+  background-color: var(--alert-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .footer__donate-btn:hover {
-  background-color: var(--text-color);
+  background-color: var(--subaccent-color);
 }
 .footer__donate-text {
   position: absolute;
