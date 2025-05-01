@@ -551,6 +551,15 @@ donateBtn.addEventListener('click', () => {
     console.error('Clipboard copy failed:', err);
   });
 });
+
+// Изменение числа проектов на странице при добавлении в массив
+document.addEventListener("DOMContentLoaded", () => {
+  const projectCount = projects.length;
+  const countElement = document.querySelector(".hero__number");
+  if (countElement) {
+    countElement.textContent = projectCount;
+  }
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
