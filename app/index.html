@@ -166,9 +166,16 @@
 
   </div>
   <div class="modal flex" tabindex="-1">
-  <p class="modal__text modal__text">
-    Interested in a partnership?
-  </p>
+  <div class="modal__wrapper flex">
+    <p class="modal__text modal__text">
+      Interested in a partnership?
+    </p>
+    <button class="modal__btn modal__btn-close btn-reset">
+      <svg class="modal__icon-close">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
   <p class="modal__text modal__text-sm">
     Contact me if you have any ideas for improving the project.
   </p>
@@ -195,13 +202,8 @@
       </a>
     </li>
   </ul>
-  <button class="modal__btn modal__btn-form btn-reset" tabindex="-1">
+  <button class="modal__btn modal__btn-form btn-reset hidden" tabindex="-1">
     Fiil the form
-  </button>
-  <button class="modal__btn modal__btn-close btn-reset">
-    <svg class="modal__icon-close">
-      <use xlink:href="img/sprite.svg#icon-close"></use>
-    </svg>
   </button>
 </div>
 
