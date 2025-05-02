@@ -246,14 +246,6 @@ const projects = [{
   discord: "https://discord.com/invite/cetusprotocol",
   logo: "img/logo-cetus.webp"
 }, {
-  name: "Lotus",
-  category: "DeFi",
-  description: "Trading strategy protocol.",
-  site: "https://beta.lotusfinance.io/",
-  x: "https://x.com/Lotusfinance_io",
-  discord: "https://discord.com/invite/lotusfinance",
-  logo: "img/logo-lotus.webp"
-}, {
   name: "Full Sail",
   category: "DeFi",
   description: "Вecentralized exchange introduces an innovative ve(4,4) tokenomics model.",
@@ -301,11 +293,23 @@ const projects = [{
   x: "https://x.com/SlushWallet",
   discord: "https://discord.com/invite/sui",
   logo: "img/logo-slushwallet.webp"
+}, {
+  name: "Lotus Finance",
+  category: "DeFi",
+  description: "Trading strategy protocol.",
+  site: "https://beta.lotusfinance.io/",
+  x: "https://x.com/Lotusfinance_io",
+  discord: "https://discord.com/invite/lotusfinance",
+  logo: "img/logo-lotus.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
 const lastProject = projects[projects.length - 1];
-document.querySelector('.hero__name').textContent = lastProject.name;
+const heroNameEl = document.querySelector('.hero__name');
+const textNode = Array.from(heroNameEl.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+if (textNode) {
+  textNode.textContent = lastProject.name + ' ';
+}
 document.querySelector('.hero__btn').addEventListener('click', () => {
   const projectName = document.querySelector('.hero__name').textContent.trim();
   document.querySelectorAll('.project__card-item.hidden').forEach(card => {
