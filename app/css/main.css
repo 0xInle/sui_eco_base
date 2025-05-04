@@ -871,8 +871,8 @@ body.blurred .wrapper {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   pointer-events: none;
 }
 .footer__donate-text--default {
