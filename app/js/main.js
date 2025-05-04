@@ -564,6 +564,25 @@ document.addEventListener("DOMContentLoaded", () => {
     countElement.textContent = projectCount;
   }
 });
+
+// Изменение цветовой схемы
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.querySelector('.header__btn-theme');
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'light') {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+});
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
