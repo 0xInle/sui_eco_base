@@ -534,28 +534,97 @@ searchInput.addEventListener('input', () => {
 const donateBtn = document.getElementById('donateBtn');
 const walletAddress = '0xfc6b1e4fa152b77edbac464dfd444ec275206f77f245eab0328e99e85a75ff77';
 let copiedTimeout;
-donateBtn.addEventListener('mouseenter', () => {
-  if (!donateBtn.classList.contains('show-copied')) {
-    donateBtn.classList.add('show-wallet');
-  }
-});
-donateBtn.addEventListener('mouseleave', () => {
-  if (!donateBtn.classList.contains('show-copied')) {
-    donateBtn.classList.remove('show-wallet');
-  }
-});
-donateBtn.addEventListener('click', () => {
-  navigator.clipboard.writeText(walletAddress).then(() => {
-    donateBtn.classList.remove('show-wallet');
-    donateBtn.classList.add('show-copied');
-    copiedTimeout = setTimeout(() => {
-      donateBtn.classList.remove('show-copied');
-      donateBtn.classList.remove('show-wallet');
-    }, 1000);
-  }).catch(err => {
-    console.error('Clipboard copy failed:', err);
+let isMobileTapToReveal = false;
+function isMobileDevice() {
+  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+}
+if (!isMobileDevice()) {
+  donateBtn.addEventListener('mouseenter', () => {
+    if (!donateBtn.classList.contains('show-copied')) {
+      donateBtn.classList.add('show-wallet');
+    }
   });
-});
+  donateBtn.addEventListener('mouseleave', () => {
+    if (!donateBtn.classList.contains('show-copied')) {
+      donateBtn.classList.remove('show-wallet');
+    }
+  });
+  donateBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(walletAddress).then(() => {
+      donateBtn.classList.remove('show-wallet');
+      donateBtn.classList.add('show-copied');
+      clearTimeout(copiedTimeout);
+      copiedTimeout = setTimeout(() => {
+        donateBtn.classList.remove('show-copied');
+        donateBtn.classList.add('show-wallet');
+      }, 1000);
+    }).catch(err => {
+      console.error('Clipboard copy failed:', err);
+    });
+  });
+} else {
+  donateBtn.addEventListener('click', () => {
+    if (!donateBtn.classList.contains('show-wallet') && !donateBtn.classList.contains('show-copied')) {
+      donateBtn.classList.add('show-wallet');
+      isMobileTapToReveal = true;
+      setTimeout(() => {
+        if (isMobileTapToReveal) {
+          donateBtn.classList.remove('show-wallet');
+          donateBtn.blur();
+          isMobileTapToReveal = false;
+        }
+      }, 3000);
+      return;
+    }
+    if (isMobileTapToReveal) {
+      navigator.clipboard.writeText(walletAddress).then(() => {
+        donateBtn.classList.remove('show-wallet');
+        donateBtn.classList.add('show-copied');
+        copiedTimeout = setTimeout(() => {
+          donateBtn.classList.remove('show-copied');
+        }, 1000);
+        donateBtn.blur();
+        donateBtn.classList.remove('show-wallet');
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+      });
+      isMobileTapToReveal = false;
+    }
+  });
+  document.addEventListener('click', event => {
+    if (!donateBtn.contains(event.target)) {
+      donateBtn.classList.remove('show-wallet');
+      donateBtn.blur();
+      isMobileTapToReveal = false;
+    }
+  });
+}
+if (!isMobileDevice()) {
+  donateBtn.addEventListener('mouseenter', () => {
+    if (!donateBtn.classList.contains('show-copied')) {
+      donateBtn.classList.add('show-wallet');
+    }
+  });
+  donateBtn.addEventListener('mouseleave', () => {
+    if (!donateBtn.classList.contains('show-copied')) {
+      donateBtn.classList.remove('show-wallet');
+    }
+  });
+  donateBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(walletAddress).then(() => {
+      donateBtn.classList.remove('show-wallet');
+      donateBtn.classList.add('show-copied');
+      clearTimeout(copiedTimeout);
+      copiedTimeout = setTimeout(() => {
+        donateBtn.classList.remove('show-copied');
+        donateBtn.classList.remove('show-wallet');
+        donateBtn.blur();
+      }, 1000);
+    }).catch(err => {
+      console.error('Clipboard copy failed:', err);
+    });
+  });
+}
 
 // Изменение числа проектов на странице при добавлении в массив
 document.addEventListener("DOMContentLoaded", () => {

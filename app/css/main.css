@@ -854,8 +854,10 @@ body.blurred .wrapper {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.footer__donate-btn:hover {
-  background-color: var(--subaccent-color);
+@media (any-hover: hover) {
+  .footer__donate-btn:hover {
+    background-color: var(--subaccent-color);
+  }
 }
 @media (width <= 661px) {
   .footer__donate-btn {
@@ -904,6 +906,11 @@ body.blurred .wrapper {
   width: 16px;
   height: 16px;
   fill: #4da2ff;
+}
+
+.show-wallet,
+.show-copied {
+  background-color: var(--subaccent-color);
 }
 
 .modal {
