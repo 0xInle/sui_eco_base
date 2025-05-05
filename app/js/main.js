@@ -248,7 +248,7 @@ const projects = [{
 }, {
   name: "Full Sail",
   category: "DeFi",
-  description: "Вecentralized exchange introduces an innovative ve(4,4) tokenomics model.",
+  description: "Decentralized exchange introduces an innovative ve(4,4) tokenomics model.",
   site: "https://www.fullsail.finance/",
   x: "https://x.com/fullsailfi",
   discord: "https://discord.com/invite/fullsailfi",
@@ -546,10 +546,9 @@ donateBtn.addEventListener('click', () => {
   navigator.clipboard.writeText(walletAddress).then(() => {
     donateBtn.classList.remove('show-wallet');
     donateBtn.classList.add('show-copied');
-    clearTimeout(copiedTimeout);
     copiedTimeout = setTimeout(() => {
       donateBtn.classList.remove('show-copied');
-      donateBtn.classList.add('show-wallet');
+      donateBtn.classList.remove('show-wallet');
     }, 1000);
   }).catch(err => {
     console.error('Clipboard copy failed:', err);
