@@ -346,39 +346,41 @@ function generateProjectCards(projectsToRender) {
       projectCard.classList.add('hidden');
     }
     projectCard.innerHTML = `
-      <div class="project__card-wrapper">
-        <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
-        <div class="project__card-name">${project.name}</div>
-        <div class="project__card-category">${project.category}</div>
-        <div class="project__card-descr">${project.description}</div>
-      </div>
-      <div class="project__social-wrapper">
-        <ul class="project__social-list list-reset flex">
-          <li class="project__social-item">
-            <a href="${project.site}" class="project__social-link link-reset" target="_blank">
-              <svg class="project__social-icon">
-                <use xlink:href="img/sprite.svg#icon-site"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="project__social-item">
-            <a href="${project.x}" class="project__social-link link-reset" target="_blank">
-              <svg class="project__social-icon">
-                <use xlink:href="img/sprite.svg#icon-x"></use>
-              </svg>
-            </a>
-          </li>
-          ${project.discord ? `
-          <li class="project__social-item">
-            <a href="${project.discord}" class="project__social-link link-reset" target="_blank">
-              <svg class="project__social-icon">
-                <use xlink:href="img/sprite.svg#icon-ds"></use>
-              </svg>
-            </a>
-          </li>` : ''}
-        </ul>
-      </div>
-    `;
+  <div class="project__card-wrapper">
+    <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
+    <div class="project__card-name">${project.name}</div>
+    <div class="project__card-category">${project.category}</div>
+    <div class="project__card-descr">${project.description}</div>
+  </div>
+  <div class="project__social-wrapper">
+    <ul class="project__social-list list-reset flex">
+      ${project.site ? `
+      <li class="project__social-item">
+        <a href="${project.site}" class="project__social-link link-reset" target="_blank">
+          <svg class="project__social-icon">
+            <use xlink:href="img/sprite.svg#icon-site"></use>
+          </svg>
+        </a>
+      </li>` : ''}
+      ${project.x ? `
+      <li class="project__social-item">
+        <a href="${project.x}" class="project__social-link link-reset" target="_blank">
+          <svg class="project__social-icon">
+            <use xlink:href="img/sprite.svg#icon-x"></use>
+          </svg>
+        </a>
+      </li>` : ''}
+      ${project.discord ? `
+      <li class="project__social-item">
+        <a href="${project.discord}" class="project__social-link link-reset" target="_blank">
+          <svg class="project__social-icon">
+            <use xlink:href="img/sprite.svg#icon-ds"></use>
+          </svg>
+        </a>
+      </li>` : ''}
+    </ul>
+  </div>
+`;
     projectsList.appendChild(projectCard);
   });
   if (projectsToRender.length > 12) {
