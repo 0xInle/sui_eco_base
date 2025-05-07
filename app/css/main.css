@@ -644,6 +644,11 @@ body.blurred .wrapper {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.project__social-wrapper {
+  margin-top: 20px;
+  border-top: 2px solid var(--accent-color);
+  padding-top: 20px;
+}
 .project__card-list {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -654,6 +659,16 @@ body.blurred .wrapper {
   gap: 30px;
 }
 .project__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   outline: none;
   border: 2px solid var(--accent-color);
   border-radius: 8px;
@@ -674,6 +689,9 @@ body.blurred .wrapper {
 }
 .project__card-item:focus .project__card-descr {
   border-color: var(--subaccent-color);
+}
+.project__card-item.hidden {
+  display: none;
 }
 .project__card-logo {
   margin-bottom: 10px;
@@ -706,8 +724,6 @@ body.blurred .wrapper {
   transition: all 0.3s ease-in-out;
 }
 .project__card-descr {
-  margin-bottom: 20px;
-  border-bottom: 2px solid var(--accent-color);
   min-height: 110px;
   font-size: 12px;
   line-height: 2;

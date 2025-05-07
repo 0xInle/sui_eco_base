@@ -288,11 +288,315 @@ const projects = [{
 }, {
   name: "Slush Wallet",
   category: "Wallet",
-  description: "Multi-platform wallet for NFTs, DeFi, and crypto with zkLogin support..",
+  description: "Multi-platform wallet for NFTs, DeFi, and crypto with zkLogin support.",
   site: "https://slush.app/",
   x: "https://x.com/SlushWallet",
   discord: "https://discord.com/invite/sui",
   logo: "img/logo-slushwallet.webp"
+}, {
+  name: "Anima",
+  category: "GameFi",
+  description: "Web3 studio offering no-code NFT tools for games and virtual worlds.",
+  site: "https://anima.nexus/",
+  x: "https://x.com/animalabs_io",
+  discord: "https://discord.com/invite/7AuvnpqZQe",
+  logo: "img/logo-anima.webp"
+}, {
+  name: "Artfi",
+  category: "RWA",
+  description: "Platform for investing in fine art through fractional NFTs, bridging physical and digital galleries.",
+  site: "https://artfi.world/",
+  x: "https://x.com/artfiglobal",
+  discord: "https://discord.gg/artfi-997391352369254512",
+  logo: "img/logo-artfi.webp"
+}, {
+  name: "Arttoo",
+  category: "RWA",
+  description: "Platform for investing in art and owning its digital copies.",
+  site: "https://arttoo.co.uk/",
+  x: "https://x.com/arttoo_official",
+  discord: null,
+  logo: "img/logo-arttoo.webp"
+}, {
+  name: "BlueMove",
+  category: "Nft Marketplace",
+  description: "NFT platform for buying and selling digital collectibles on the blockchain.",
+  site: "https://sui.bluemove.net/",
+  x: "https://x.com/BlueMove_OA",
+  discord: "https://discord.com/invite/7eXkAnyeCV",
+  logo: "img/logo-bluemove.webp"
+}, {
+  name: "Chirp",
+  category: "DePin",
+  description: "Decentralized IoT network that collects wireless data via a mobile app.",
+  site: "https://chirptoken.io/",
+  x: "https://x.com/ChirpDeWi",
+  discord: "hhttps://discord.com/invite/zxAaVQgFvs",
+  logo: "img/logo-chirp.webp"
+}, {
+  name: "DeSuiLabs",
+  category: "GameFi",
+  description: "Web3 competition platform with gamified experiences for a unique user experience.",
+  site: "https://www.desuilabs.io/",
+  x: "https://x.com/DeSuiLabs",
+  discord: "https://discord.com/invite/2Cfm9gpTCu",
+  logo: "img/logo-desuilabs.webp"
+}, {
+  name: "Fewcha Wallet",
+  category: "Wallet",
+  description: "A non-custodial wallet for Move-based blockchains, supporting Web3 assets and NFTs.",
+  site: "https://fewcha.app/",
+  x: "https://x.com/fewchawallet",
+  discord: null,
+  logo: "img/logo-fewchawallet.webp"
+}, {
+  name: "Ika",
+  category: "Infrastructure",
+  description: "An ultra-fast MPC network enabling cross-chain coordination and DeFi solutions.",
+  site: "https://ika.xyz/",
+  x: "https://x.com/ikadotxyz",
+  discord: "https://discord.com/invite/ikadotxyz",
+  logo: "img/logo-ika.webp"
+}, {
+  name: "Karrier One",
+  category: "Infrastructure",
+  description: "Decentralized mobile network enabling users to create and monetize mobile networks through the DePIN model.",
+  site: "https://www.karrier.one/",
+  x: "https://x.com/karrier_one",
+  discord: "https://discord.com/invite/karrierone",
+  logo: "img/logo-karrierone.webp"
+}, {
+  name: "MovePump",
+  category: "Launchpad",
+  description: "Decentralized platform for meme token creation and trading.",
+  site: "https://movepump.com/",
+  x: "https://x.com/BlueMove_OA",
+  discord: "https://discord.com/invite/7eXkAnyeCV",
+  logo: "img/logo-movepump.webp"
+}, {
+  name: "Nightly Wallet",
+  category: "Wallet",
+  description: "A multi-chain wallet designed to solve common crypto issues.",
+  site: "https://nightly.app/",
+  x: "https://x.com/Nightly_app",
+  discord: "https://discord.com/invite/7nhFHA6yZq",
+  logo: "img/logo-nightlywallet.webp"
+}, {
+  name: "Polymedia",
+  category: "Infrastructure",
+  description: "A decentralized app ecosystem offering tools for profile creation, asset exchange, betting, gaming, and community participation.",
+  site: "https://polymedia.app/",
+  x: "https://x.com/polymedia_app",
+  discord: null,
+  logo: "img/logo-polymedia.webp"
+}, {
+  name: "Shadow",
+  category: "Nft Marketplace",
+  description: "A no-code platform for creating and trading NFTs with a dynamic bonding curve model, where prices adjust based on demand.",
+  site: "https://shadow.app/",
+  x: "https://x.com/shadow_sui",
+  discord: null,
+  logo: "img/logo-shadow.webp"
+}, {
+  name: "Shadow Wallet",
+  category: "Wallet",
+  description: "A self-custodial Web3 wallet for DeFi and NFTs, offering secure, private transactions with full control over funds.",
+  site: null,
+  x: "https://x.com/shadow_sui",
+  discord: null,
+  logo: "img/logo-shadow.webp"
+}, {
+  name: "Spritz Finance",
+  category: "Payments",
+  description: "A Web3 platform for paying bills and making purchases using cryptocurrency, supporting over 6,000 bill types and a virtual debit card.",
+  site: "https://www.spritz.finance/",
+  x: "https://x.com/spritzfinance",
+  discord: null,
+  logo: "img/logo-spritzfinance.webp"
+}, {
+  name: "Studio Mirai",
+  category: "Infrastructure",
+  description: "A creative studio building next-gen digital experiences and NFT collections.",
+  site: null,
+  x: "https://x.com/_StudioMirai",
+  discord: "https://discord.com/invite/studiomirai",
+  logo: "img/logo-studiomirai.webp"
+}, {
+  name: "Suiet",
+  category: "Wallet",
+  description: "An open-source, self-custodial wallet focused on privacy, security, and user ownership, built to promote transparency and decentralization.",
+  site: "https://suiet.app/",
+  x: "https://x.com/suiet_wallet",
+  discord: "https://discord.com/invite/XQspMzXNXu",
+  logo: "img/logo-suiet.webp"
+}, {
+  name: "SuiPlay",
+  category: "Others",
+  description: "A handheld gaming device that combines Web3 features with traditional gaming, enabling true digital ownership and seamless access to blockchain games.",
+  site: "https://www.suiplay0x1.com/",
+  x: "https://x.com/SuiPlay",
+  discord: "https://discord.com/invite/suiplay",
+  logo: "img/logo-suiplay.webp"
+}, {
+  name: "Suiscan",
+  category: "Analytics",
+  description: "A comprehensive blockchain explorer and analytics platform offering real-time data on transactions, tokens, smart contracts, and validator performance.",
+  site: "https://suiscan.xyz/",
+  x: "https://x.com/suiscanofficial",
+  discord: "https://discord.com/invite/UBQ85uSyAU",
+  logo: "img/logo-suiscan.webp"
+}, {
+  name: "SuiVision",
+  category: "Analytics",
+  description: "A user-friendly blockchain explorer offering detailed insights into transactions, accounts, assets, and validators for easy on-chain analysis.",
+  site: "https://suivision.xyz/",
+  x: "https://x.com/blockvisionhq",
+  discord: "https://discord.com/invite/blockvision",
+  logo: "img/logo-suivision.webp"
+}, {
+  name: "Surf Wallet",
+  category: "Wallet",
+  description: "A secure, user-friendly crypto wallet offering features like zkLogin, in-wallet staking, and integrated swaps, with no extra fees or data tracking.",
+  site: "https://surf.tech/",
+  x: "https://x.com/surf_wallet",
+  discord: null,
+  logo: "img/logo-surfwallet.webp"
+}, {
+  name: "Typus Finance",
+  category: "DeFi",
+  description: "A decentralized derivatives platform offering options and perpetuals with real yield, using innovative tools like Dutch auctions and lending strategies.",
+  site: "https://typus.finance/",
+  x: "https://x.com/TypusFinance",
+  discord: "https://discord.com/invite/pzETKp6zvr",
+  logo: "img/logo-typusfinance.webp"
+}, {
+  name: "Recrd",
+  category: "SocialFi",
+  description: "A platform for monetizing short videos.",
+  site: "https://www.recrd.com/",
+  x: "https://x.com/RECRDapp",
+  discord: null,
+  logo: "img/logo-recrd.webp"
+}, {
+  name: "Momentum",
+  category: "DeFi",
+  description: "A decentralized finance protocol enabling efficient token swaps, low slippage, and high yields through ve(3,3) and CLMM technologies.",
+  site: "https://app.mmt.finance/",
+  x: "https://x.com/MMTFinance",
+  discord: "https://discord.com/invite/mmtfinance",
+  logo: "img/logo-momentum.webp"
+}, {
+  name: "Pebble",
+  category: "GambleFi",
+  description: "A gaming platform delivering classic and accessible Web3 games with a focus on quality, transparency, and ease of entry.",
+  site: "https://www.pebblestream.io/",
+  x: "https://x.com/PebblePlay",
+  discord: null,
+  logo: "img/logo-pebble.webp"
+}, {
+  name: "Astros",
+  category: "DeFi",
+  description: "Decentralized platform for token swaps and perpetual contracts with low fees and high speed.",
+  site: "https://astros.ag/",
+  x: "https://x.com/astros_ag",
+  discord: "https://discord.com/invite/R6Xkbee8Xq",
+  logo: "img/logo-astros.webp"
+}, {
+  name: "Wave",
+  category: "DeFi",
+  description: "An ecosystem combining DeFi, GameFi, and AI applications in one place, easily accessible via Telegram.",
+  site: "https://waveonsui.com/",
+  x: "https://x.com/WaveOnSui",
+  discord: "https://discord.com/invite/waveonsui",
+  logo: "img/logo-wave.webp"
+}, {
+  name: "Obric",
+  category: "DeFi",
+  description: "Next-gen AMM with concentrated liquidity, zero loss, and smart pricing via external oracle.",
+  site: "https://obric.xyz/",
+  x: "https://x.com/poor_obric",
+  discord: null,
+  logo: "img/logo-obric.webp"
+}, {
+  name: "Sui Passport",
+  category: "Others",
+  description: "Decentralized platform for collecting digital stamps for community participation. Rewards for events and content.",
+  site: "https://www.suipassport.app/",
+  x: "https://x.com/SuiFamOfficial",
+  discord: null,
+  logo: "img/logo-suipassport.webp"
+}, {
+  name: "Talentum",
+  category: "SocialFi",
+  description: "A Web3 platform for earning through tasks, quizzes, and ambassador campaigns with automated rewards.",
+  site: "https://talentum.id/",
+  x: "https://x.com/TalentumID",
+  discord: "https://discord.com/invite/GG3Q4CEv29",
+  logo: "img/logo-talentum.webp"
+}, {
+  name: "RaidenX",
+  category: "DeFi",
+  description: "Decentralized platform for high-speed trading of tokens and meme coins.",
+  site: "https://raidenx.io/",
+  x: "https://x.com/raidenx_io",
+  discord: null,
+  logo: "img/logo-raidenx.webp"
+}, {
+  name: "Suiswap",
+  category: "DeFi",
+  description: "A token swapping platform with farming, liquidity, and launchpad features.",
+  site: "https://suiswap.app/",
+  x: "https://x.com/suiswap_app",
+  discord: "https://discord.com/invite/suiswap",
+  logo: "img/logo-suiswap.webp"
+}, {
+  name: "Shio",
+  category: "Infrastructure",
+  description: "An MEV protection protocol that prevents user losses from arbitrage and sandwich attacks.",
+  site: "https://www.getshio.com/",
+  x: "https://x.com/ShioLabs",
+  discord: null,
+  logo: "img/logo-shio.webp"
+}, {
+  name: "Kai Finance",
+  category: "DeFi",
+  description: "A passive income platform with leverage for yield farming and automatic interest accrual.",
+  site: "https://kai.finance/",
+  x: "https://x.com/kai_finance_sui",
+  discord: "https://discord.com/invite/XV2xYZjReX",
+  logo: "img/logo-shio.webp"
+}, {
+  name: "Rockee",
+  category: "DeFi",
+  description: "An AI-driven DeFi protocol that helps users with trading, investments, market analysis, and community sentiment measurement for more informed decision-making.",
+  site: "https://rockee.ai/",
+  x: "https://x.com/rockeeAI",
+  discord: null,
+  logo: "img/logo-rockee.webp"
+}, {
+  name: "ZO",
+  category: "DeFi",
+  description: "Decentralized perpetual trading protocol offering fast execution, deep liquidity, AI assistant, and support for any collateral.",
+  site: "https://zofai.io/",
+  x: "https://x.com/zofaiperps",
+  discord: "https://discord.com/invite/RRfXR9VTfd",
+  logo: "img/logo-zo.webp"
+}, {
+  name: "Mole",
+  category: "DeFi",
+  description: "Decentralized protocol with AI management offering passive income through savings, leveraged farming, and automated asset management.",
+  site: "https://mole.fi/",
+  x: "https://x.com/moledefi",
+  discord: "https://discord.com/invite/JfgJzJ8kkK",
+  logo: "img/logo-mole.webp"
+}, {
+  name: "Vram.Ai",
+  category: "AI",
+  description: "Decentralized platform for launching and evolving AI agents.",
+  site: "https://www.vram.ai/",
+  x: "https://x.com/vramxai",
+  discord: "https://discord.com/invite/G3rvmPmztp",
+  logo: "img/logo-vramai.webp"
 }, {
   name: "Lotus Finance",
   category: "DeFi",
@@ -301,6 +605,14 @@ const projects = [{
   x: "https://x.com/Lotusfinance_io",
   discord: "https://discord.com/invite/lotusfinance",
   logo: "img/logo-lotus.webp"
+}, {
+  name: "Cro.Ag",
+  category: "DeFi",
+  description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup, and a reward system.",
+  site: "https://cro.ag/",
+  x: "https://x.com/cro_aggregator",
+  discord: "https://discord.com/invite/UG6c7nXr5X",
+  logo: "img/logo-croag.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
@@ -469,12 +781,18 @@ filterButtons.forEach(button => {
 // Сортировка кнопок по имени
 const list = document.querySelector('.project__list');
 const items = Array.from(list.children);
-items.sort((a, b) => {
+const allProjects = items.find(item => item.textContent.trim() === 'All Projects');
+const others = items.find(item => item.textContent.trim() === 'Others');
+const filteredItems = items.filter(item => item !== allProjects && item !== others);
+filteredItems.sort((a, b) => {
   const textA = a.textContent.trim().toLowerCase();
   const textB = b.textContent.trim().toLowerCase();
   return textA.localeCompare(textB);
 });
-items.forEach(item => list.appendChild(item));
+list.innerHTML = '';
+if (allProjects) list.appendChild(allProjects);
+filteredItems.forEach(item => list.appendChild(item));
+if (others) list.appendChild(others);
 
 // Поиск по карточкам
 const searchInput = document.querySelector('.header__search');
