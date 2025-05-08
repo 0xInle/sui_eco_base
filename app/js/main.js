@@ -608,7 +608,7 @@ const projects = [{
 }, {
   name: "Cro.Ag",
   category: "DeFi",
-  description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup, and a reward system.",
+  description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup.",
   site: "https://cro.ag/",
   x: "https://x.com/cro_aggregator",
   discord: "https://discord.com/invite/UG6c7nXr5X",
@@ -775,6 +775,27 @@ filterButtons.forEach(button => {
       const filteredProjects = projects.filter(p => p.category.toLowerCase() === category);
       generateProjectCards(filteredProjects);
     }
+    searchInput.value = '';
+    searchInput.classList.remove('input--invalid');
+    headerError.style.opacity = '0';
+    const cards = document.querySelectorAll('.project__card-item');
+    cards.forEach((card, index) => {
+      card.classList.toggle('hidden', index >= 12);
+    });
+    if (cards.length > 12 && showMoreBtn) {
+      showMoreBtn.style.display = 'block';
+    } else if (showMoreBtn) {
+      showMoreBtn.style.display = 'none';
+    }
+  });
+  button.addEventListener('blur', () => {
+    generateProjectCards(projects);
+    searchInput.value = '';
+    searchInput.classList.remove('input--invalid');
+    headerError.style.opacity = '0';
+    if (showMoreBtn) {
+      showMoreBtn.style.display = projects.length > 12 ? 'block' : 'none';
+    }
   });
 });
 
@@ -812,12 +833,13 @@ searchInput.addEventListener('input', () => {
   }
   const query = value.toLowerCase();
   if (query === "") {
-    cards.forEach((card, index) => {
-      card.classList.toggle('hidden', index >= 12);
-    });
-    if (showMoreBtn) showMoreBtn.style.display = 'block';
+    generateProjectCards(projects);
+    filterButtons.forEach(btn => btn.classList.remove('active'));
     return;
   }
+
+  // Фильтрация по введённому тексту
+  const cards = document.querySelectorAll('.project__card-item');
   let hasMatches = false;
   cards.forEach(card => {
     const name = card.querySelector('.project__card-name')?.textContent.trim().toLowerCase();
@@ -826,11 +848,7 @@ searchInput.addEventListener('input', () => {
     if (match) hasMatches = true;
   });
   if (showMoreBtn) showMoreBtn.style.display = 'none';
-  if (!hasMatches) {
-    headerError.style.opacity = "1";
-  } else {
-    headerError.style.opacity = "0";
-  }
+  headerError.style.opacity = hasMatches ? "0" : "1";
 });
 
 // Функионал кнопки с донатами
