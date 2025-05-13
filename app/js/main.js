@@ -613,6 +613,70 @@ const projects = [{
   x: "https://x.com/cro_aggregator",
   discord: "https://discord.com/invite/UG6c7nXr5X",
   logo: "img/logo-croag.webp"
+}, {
+  name: "Noodles Finance",
+  category: "DeFi",
+  description: "A multifunctional DeFi protocol combining trading, analytics, and social features.",
+  site: "https://noodles.fi/",
+  x: "https://x.com/NoodlesFi",
+  discord: null,
+  logo: "img/logo-noodlesfinance.webp"
+}, {
+  name: "GiveRep",
+  category: "SocialFi",
+  description: "A SocialFi platform that rewards your activity on X.",
+  site: "https://giverep.com/",
+  x: "https://x.com/GiveRep",
+  discord: null,
+  logo: "img/logo-giverep.webp"
+}, {
+  name: "Suigar",
+  category: "GambleFi",
+  description: "A platform with gambling mini-games where users can win tokens and earn rewards for participation.",
+  site: "https://suigar.com/",
+  x: "https://x.com/Suigar_com",
+  discord: "https://discord.com/invite/tAYGd46ZUK",
+  logo: "img/logo-suigar.webp"
+}, {
+  name: "Hokko",
+  category: "Nft Marketplace",
+  description: "A user-friendly marketplace for buying and selling digital collectibles.",
+  site: "https://www.hokko.io/",
+  x: "https://x.com/hokko_io",
+  discord: null,
+  logo: "img/logo-hokko.webp"
+}, {
+  name: "Bolt Liquidity",
+  category: "Infrastructure",
+  description: "A decentralized platform for instant, zero-slippage swaps across networks with low fees and no bridges.",
+  site: "https://www.boltliquidity.io/",
+  x: "https://x.com/BoltLiquidity",
+  discord: null,
+  logo: "img/logo-boltliquidity.webp"
+}, {
+  name: "Tugboat.Fi",
+  category: "DeFi",
+  description: "A protocol for creating decentralized, tokenized crypto investment funds with built-in DAO support and fee-sharing to incentivize fund managers.",
+  site: "https://www.tugboat.fi/",
+  x: "https://x.com/tugboatdotfi",
+  discord: null,
+  logo: "img/logo-tugboatfi.webp"
+}, {
+  name: "Pawtato Finance",
+  category: "Analytics",
+  description: "A free tool for real-time alerts, wallet tracking, and portfolio management.",
+  site: "https://pawtato.finance/",
+  x: "https://x.com/PawtatoFinance",
+  discord: "https://discord.com/invite/fNEAnHD4RV",
+  logo: "img/logo-pawtatofinance.webp"
+}, {
+  name: "Moonbags",
+  category: "Launchpad",
+  description: "A platform for launching tokens without code, offering staking rewards and fee-based incentives.",
+  site: "https://moonbags.io/",
+  x: "https://x.com/moonbags_io",
+  discord: null,
+  logo: "img/logo-moonbags.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
@@ -786,15 +850,6 @@ filterButtons.forEach(button => {
       showMoreBtn.style.display = 'block';
     } else if (showMoreBtn) {
       showMoreBtn.style.display = 'none';
-    }
-  });
-  button.addEventListener('blur', () => {
-    generateProjectCards(projects);
-    searchInput.value = '';
-    searchInput.classList.remove('input--invalid');
-    headerError.style.opacity = '0';
-    if (showMoreBtn) {
-      showMoreBtn.style.display = projects.length > 12 ? 'block' : 'none';
     }
   });
 });
