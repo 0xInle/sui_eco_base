@@ -688,24 +688,29 @@ if (textNode) {
 }
 document.querySelector('.hero__btn').addEventListener('click', () => {
   const projectName = document.querySelector('.hero__name').textContent.trim();
-  document.querySelectorAll('.project__card-item.hidden').forEach(card => {
-    card.classList.remove('hidden');
-  });
   const cards = document.querySelectorAll('.project__card-item');
-  const targetCard = Array.from(cards).find(card => {
-    return card.querySelector('.project__card-name')?.textContent.trim() === projectName;
+  let found = false;
+  cards.forEach(card => {
+    const name = card.querySelector('.project__card-name')?.textContent.trim();
+    const isMatch = name === projectName;
+    card.classList.toggle('hidden', !isMatch);
+    if (isMatch) {
+      card.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      card.focus();
+      found = true;
+    }
   });
-  if (targetCard) {
-    targetCard.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-    targetCard.focus();
-  }
   const showMoreBtn = document.querySelector('.project__card-btn');
   if (showMoreBtn) {
     showMoreBtn.style.display = 'none';
   }
+  filterButtons.forEach(btn => btn.classList.remove('active'));
+  searchInput.value = '';
+  searchInput.classList.remove('input--invalid');
+  headerError.style.opacity = '0';
 });
 
 // Функция для генерации карточек
