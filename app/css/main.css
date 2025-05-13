@@ -635,6 +635,9 @@ body.blurred .wrapper {
     min-width: max-content;
   }
 }
+.project__btn--all {
+  background-color: var(--accent-color);
+}
 .project__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +740,7 @@ body.blurred .wrapper {
   outline: none;
   border-radius: 8px;
   padding: 20px 40px;
-  max-width: 200px;
+  min-width: 191px;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--text-color);
