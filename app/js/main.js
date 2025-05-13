@@ -727,59 +727,86 @@ function generateProjectCards(projectsToRender) {
       projectCard.classList.add('hidden');
     }
     projectCard.innerHTML = `
-  <div class="project__card-wrapper">
-    <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
-    <div class="project__card-name">${project.name}</div>
-    <div class="project__card-category">${project.category}</div>
-    <div class="project__card-descr">${project.description}</div>
-  </div>
-  <div class="project__social-wrapper">
-    <ul class="project__social-list list-reset flex">
-      ${project.site ? `
-      <li class="project__social-item">
-        <a href="${project.site}" class="project__social-link link-reset" target="_blank">
-          <svg class="project__social-icon">
-            <use xlink:href="img/sprite.svg#icon-site"></use>
-          </svg>
-        </a>
-      </li>` : ''}
-      ${project.x ? `
-      <li class="project__social-item">
-        <a href="${project.x}" class="project__social-link link-reset" target="_blank">
-          <svg class="project__social-icon">
-            <use xlink:href="img/sprite.svg#icon-x"></use>
-          </svg>
-        </a>
-      </li>` : ''}
-      ${project.discord ? `
-      <li class="project__social-item">
-        <a href="${project.discord}" class="project__social-link link-reset" target="_blank">
-          <svg class="project__social-icon">
-            <use xlink:href="img/sprite.svg#icon-ds"></use>
-          </svg>
-        </a>
-      </li>` : ''}
-    </ul>
-  </div>
-`;
+      <div class="project__card-wrapper">
+        <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
+        <div class="project__card-name">${project.name}</div>
+        <div class="project__card-category">${project.category}</div>
+        <div class="project__card-descr">${project.description}</div>
+      </div>
+      <div class="project__social-wrapper">
+        <ul class="project__social-list list-reset flex">
+          ${project.site ? `
+          <li class="project__social-item">
+            <a href="${project.site}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-site"></use>
+              </svg>
+            </a>
+          </li>` : ''}
+          ${project.x ? `
+          <li class="project__social-item">
+            <a href="${project.x}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-x"></use>
+              </svg>
+            </a>
+          </li>` : ''}
+          ${project.discord ? `
+          <li class="project__social-item">
+            <a href="${project.discord}" class="project__social-link link-reset" target="_blank">
+              <svg class="project__social-icon">
+                <use xlink:href="img/sprite.svg#icon-ds"></use>
+              </svg>
+            </a>
+          </li>` : ''}
+        </ul>
+      </div>
+    `;
     projectsList.appendChild(projectCard);
   });
   if (projectsToRender.length > 12) {
     showMoreBtn.style.display = 'block';
+    showMoreBtn.textContent = 'Show more';
   } else {
     showMoreBtn.style.display = 'none';
   }
 }
+generateProjectCards(projects);
+
+// Функция для отображения скрытых карточек
 document.querySelector('.project__card-btn').addEventListener('click', function () {
+  const allCards = document.querySelectorAll('.project__card-item');
   const hiddenCards = document.querySelectorAll('.project__card-item.hidden');
-  for (let i = 0; i < 4 && i < hiddenCards.length; i++) {
-    hiddenCards[i].classList.remove('hidden');
-  }
-  if (document.querySelectorAll('.project__card-item.hidden').length === 0) {
-    this.style.display = 'none';
+  if (hiddenCards.length > 0) {
+    const cardsToShow = [];
+    for (let i = 0; i < 4 && i < hiddenCards.length; i++) {
+      hiddenCards[i].classList.remove('hidden');
+      cardsToShow.push(hiddenCards[i]);
+    }
+    if (cardsToShow.length > 0) {
+      cardsToShow[0].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    if (document.querySelectorAll('.project__card-item.hidden').length === 0) {
+      this.textContent = 'Show less';
+    }
+  } else {
+    allCards.forEach((card, index) => {
+      if (index >= 12) {
+        card.classList.add('hidden');
+      }
+    });
+    this.textContent = 'Show more';
+    if (allCards.length > 0) {
+      allCards[0].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 });
-generateProjectCards(projects);
 
 // Открытие и закрытие блока контактов
 const btnOpen = document.querySelector('.header__btn-contacts');
@@ -897,8 +924,6 @@ searchInput.addEventListener('input', () => {
     filterButtons.forEach(btn => btn.classList.remove('active'));
     return;
   }
-
-  // Фильтрация по введённому тексту
   const cards = document.querySelectorAll('.project__card-item');
   let hasMatches = false;
   cards.forEach(card => {
