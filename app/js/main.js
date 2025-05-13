@@ -677,6 +677,38 @@ const projects = [{
   x: "https://x.com/moonbags_io",
   discord: null,
   logo: "img/logo-moonbags.webp"
+}, {
+  name: "SuiBets",
+  category: "GambleFi",
+  description: "A decentralized betting platform with a Telegram bot for real-time odds and easy crypto bets.",
+  site: "https://suibets.com/",
+  x: "https://x.com/Sui_Bets/",
+  discord: null,
+  logo: "img/logo-suibets.webp"
+}, {
+  name: "CoinDrip",
+  category: "Others",
+  description: "A protocol for real-time token distribution with customizable streams, enabling transparent payments, vesting, and tradable NFTs.",
+  site: "https://coindrip.finance/",
+  x: "https://x.com/CoinDripHQ",
+  discord: null,
+  logo: "img/logo-coindrip.webp"
+}, {
+  name: "Atoma",
+  category: "AI",
+  description: "Private and verifiable AI execution network on decentralized GPUs with data protection and OpenAI API support.",
+  site: "https://atoma.network/",
+  x: "https://x.com/Atoma_Network",
+  discord: "https://discord.com/invite/atoma",
+  logo: "img/logo-atoma.webp"
+}, {
+  name: "Deeptrade",
+  category: "DeFi",
+  description: "Decentralized orderbook exchange with zero fees for token holders, swap aggregation, and market analytics.",
+  site: "https://deeptrade.io/",
+  x: "https://x.com/_deeptrade",
+  discord: null,
+  logo: "img/logo-deeptrade.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
