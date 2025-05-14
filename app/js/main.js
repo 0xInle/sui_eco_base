@@ -709,6 +709,14 @@ const projects = [{
   x: "https://x.com/_deeptrade",
   discord: null,
   logo: "img/logo-deeptrade.webp"
+}, {
+  name: "PinataBot",
+  category: "Others",
+  description: "Decentralized OTC for pre-launch token trading, secured by deposits.",
+  site: "https://market.pinatabot.com/",
+  x: "https://x.com/PinataBotOnSui",
+  discord: null,
+  logo: "img/logo-pinatabot.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
