@@ -638,6 +638,10 @@ body.blurred .wrapper {
 .project__btn--all {
   background-color: var(--accent-color);
 }
+.project__btn.active {
+  color: var(--bg-color);
+  background-color: var(--subaccent-color);
+}
 .project__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

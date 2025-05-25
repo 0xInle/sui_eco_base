@@ -342,6 +342,22 @@ const projects = [{
   discord: "https://discord.com/invite/2Cfm9gpTCu",
   logo: "img/logo-desuilabs.webp"
 }, {
+  name: "Stratton Labs",
+  category: "GameFi",
+  description: "A studio specializing in the development of games that combine DeFi and GameFi.",
+  site: null,
+  x: "https://x.com/Strattonweb3",
+  discord: null,
+  logo: "img/logo-strattonlabs.webp"
+}, {
+  name: "ONE Fight Arena",
+  category: "GameFi",
+  description: "A mobile Web3 match-3 game with MMA-style PvP battles.",
+  site: "https://onefightarena.com/",
+  x: "https://x.com/onefightarena",
+  discord: "https://discord.com/invite/Unr2CECBJc",
+  logo: "img/logo-onefightarena.webp"
+}, {
   name: "Fewcha Wallet",
   category: "Wallet",
   description: "A non-custodial wallet for Move-based blockchains, supporting Web3 assets and NFTs.",
@@ -717,6 +733,86 @@ const projects = [{
   x: "https://x.com/PinataBotOnSui",
   discord: null,
   logo: "img/logo-pinatabot.webp"
+}, {
+  name: "xPortal",
+  category: "Wallet",
+  description: "A smart crypto wallet for asset storage, exchange, and management with DeFi, NFT support, and instant fiat conversion.",
+  site: "https://xportal.com/",
+  x: "https://x.com/xPortalApp",
+  discord: null,
+  logo: "img/logo-xportal.webp"
+}, {
+  name: "Birds",
+  category: "AI",
+  description: "A platform that combines gaming, artificial intelligence, and creative tools. It streamlines AI integration and supports content creation.",
+  site: "https://thebirds.ai/",
+  x: "https://x.com/TheBirdsDogs",
+  discord: null,
+  logo: "img/logo-birds.webp"
+}, {
+  name: "Mogul",
+  category: "Others",
+  description: "A fantasy-style platform where users can create virtual film studios by selecting actors, directors, and movies to compete for points and prizes.",
+  site: "https://mogul.moviepass.com/",
+  x: "https://x.com/mogulxmoviepass",
+  discord: "https://discord.com/invite/MoviePass",
+  logo: "img/logo-mogul.webp"
+}, {
+  name: "MoviePass",
+  category: "Others",
+  description: "A subscription service for watching movies in US theaters with flexible plans and a user-friendly app.",
+  site: "https://www.moviepass.com/",
+  x: "https://x.com/MoviePass",
+  discord: "https://discord.com/invite/moviepass",
+  logo: "img/logo-moviepass.webp"
+}, {
+  name: "Metastable",
+  category: "DeFi",
+  description: "A decentralized financial platform focused on simplifying stablecoin usage and providing unified liquidity.",
+  site: "https://mstable.io/",
+  x: "https://x.com/MetaStables",
+  discord: null,
+  logo: "img/logo-metastable.webp"
+}, {
+  name: "Takibi",
+  category: "Infrastructure",
+  description: "A platform for fast development of decentralized games and apps.",
+  site: null,
+  x: "https://x.com/TakibiProtocol",
+  discord: null,
+  logo: "img/logo-takibi.webp"
+}, {
+  name: "Mitsui Protocol",
+  category: "DeFi",
+  description: "An innovative desktop app for trading and asset management, combining AI automation with a modular interface and high flexibility.",
+  site: "https://www.mitsuiprotocol.ai/",
+  x: "https://x.com/MitsuiProtocol",
+  discord: null,
+  logo: "img/logo-mitsuiprotocol.webp"
+}, {
+  name: "Splash",
+  category: "Launchpad",
+  description: "A fair token launch platform with no intermediaries. Includes tools for trading, analytics, and security.",
+  site: "https://splash.xyz/",
+  x: "https://x.com/splash_xyz",
+  discord: null,
+  logo: "img/logo-splash.webp"
+}, {
+  name: "Patara",
+  category: "Analytics",
+  description: "A simple and intuitive Web3 platform for managing crypto assets. Features include swaps, portfolio tracking, lending, NFTs, and more.",
+  site: "https://alpha.patara.app/",
+  x: "https://x.com/PataraApp",
+  discord: null,
+  logo: "img/logo-patara.webp"
+}, {
+  name: "Smithii Tools",
+  category: "Infrastructure",
+  description: "Decentralized platform with tools to launch and manage Web3 projects.",
+  site: "https://tools.smithii.io/",
+  x: "https://x.com/SmithiiTools",
+  discord: "https://discord.com/invite/3AFfGDfmk7",
+  logo: "img/logo-smithiitools.webp"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
@@ -900,11 +996,17 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// Сортировка карточек при нажатии на кнопку
+// // Сортировка карточек при нажатии на кнопку
 const filterButtons = document.querySelectorAll('.project__btn');
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const category = button.textContent.trim().toLowerCase();
+
+    // Удаляем активный класс со всех кнопок
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+    // Добавляем активный класс на текущую кнопку
+    button.classList.add('active');
     if (category === 'all projects') {
       generateProjectCards(projects);
     } else {
