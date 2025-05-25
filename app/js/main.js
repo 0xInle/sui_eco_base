@@ -23,7 +23,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 const projects = [{
   name: "Hop",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "Zero-fee DEX aggregator offering optimal token swap rates",
   site: "https://hop.ag/",
   x: "https://x.com/HopAggregator",
@@ -47,7 +47,7 @@ const projects = [{
   logo: "img/logo-tusky.webp"
 }, {
   name: "Bread Walrus",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "Liquid staking on the Walrus protocol.",
   site: null,
   x: "https://x.com/BreadWalrusLST",
@@ -55,7 +55,7 @@ const projects = [{
   logo: "img/logo-breadwalrus.webp"
 }, {
   name: "Winter Walrus",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "Liquid staking on the Walrus protocol.",
   site: "https://www.winterwalrus.com/",
   x: "https://x.com/WalrusLST",
@@ -71,7 +71,7 @@ const projects = [{
   logo: "img/logo-steamm.webp"
 }, {
   name: "Volo",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "Liquid staking platform enhancing liquidity and utility.",
   site: "https://www.volosui.com/",
   x: "https://x.com/volo_sui",
@@ -79,7 +79,7 @@ const projects = [{
   logo: "img/logo-volo.webp"
 }, {
   name: "SpringSui",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "Liquid staking platform offering instant unstaking and enhanced DeFi integration.",
   site: "https://springsui.com/",
   x: "https://x.com/springsui_",
@@ -87,7 +87,7 @@ const projects = [{
   logo: "img/logo-springsui.webp"
 }, {
   name: "Magma Finance",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "AMM DEX integrating ve(3,3) tokenomics for optimized liquidity incentives.",
   site: "https://magmafinance.io/",
   x: "https://x.com/Magma_Finance",
@@ -111,7 +111,7 @@ const projects = [{
   logo: "img/logo-winx.webp"
 }, {
   name: "Sudo Finance",
-  category: "DeFi",
+  category: "DeFi, Perpetual",
   description: "Decentralized perpetuals exchange with fast, zero-impact trading.",
   site: "https://www.sudo.finance/",
   x: "https://x.com/sudofinance",
@@ -119,7 +119,7 @@ const projects = [{
   logo: "img/logo-sudofinance.webp"
 }, {
   name: "Suilend",
-  category: "DeFi",
+  category: "DeFi, Lending",
   description: "Decentralized lending and borrowing protocol with efficient asset management.",
   site: "https://suilend.fi/",
   x: "https://x.com/suilendprotocol",
@@ -135,7 +135,7 @@ const projects = [{
   logo: "img/logo-walrus.webp"
 }, {
   name: "Aftermath Finance",
-  category: "DeFi",
+  category: "DeFi, LST, Aggregator",
   description: "DeFi platform offering DEX, liquid staking, and derivatives trading.",
   site: "https://aftermath.finance/",
   x: "https://x.com/AftermathFi/",
@@ -143,7 +143,7 @@ const projects = [{
   logo: "img/logo-aftermathfinance.webp"
 }, {
   name: "Turbos Finance",
-  category: "DeFi",
+  category: "DeFi, Launchpad",
   description: "Non-custodial DEX using a concentrated liquidity model for efficient trading.",
   site: "https://turbos.finance/",
   x: "https://x.com/Turbos_finance/",
@@ -151,7 +151,7 @@ const projects = [{
   logo: "img/logo-turbosfinance.webp"
 }, {
   name: "7K Smart Trading",
-  category: "DeFi",
+  category: "DeFi, Aggregator, Launchpad",
   description: "Smart trading aggregator offering optimal swap routes via AMMs, CLMMs, and order book DEXs with low slippage and gas fees.",
   site: "https://port.7k.ag/",
   x: "https://x.com/7k_ag_",
@@ -159,7 +159,7 @@ const projects = [{
   logo: "img/logo-7k.webp"
 }, {
   name: "AlphaFi",
-  category: "DeFi",
+  category: "DeFi, LST, Yield Aggregator",
   description: "Yield optimizer with auto-compounding vaults and liquid staking.",
   site: "https://alphafi.xyz/",
   x: "https://x.com/AlphaFiSUI",
@@ -167,7 +167,7 @@ const projects = [{
   logo: "img/logo-alphafi.webp"
 }, {
   name: "Bluefin",
-  category: "DeFi",
+  category: "DeFi, Perpetual",
   description: "High-performance DEX for perpetual derivatives with CEX-like experience.",
   site: "https://bluefin.io/",
   x: "https://x.com/bluefinapp",
@@ -175,7 +175,7 @@ const projects = [{
   logo: "img/logo-bluefin.webp"
 }, {
   name: "DoubleUp",
-  category: "GambleFi",
+  category: "GambleFi, Launchpad",
   description: "Decentralized casino with transparent on-chain games.",
   site: "https://www.doubleup.fun/",
   x: "https://x.com/doubleup_app",
@@ -183,7 +183,7 @@ const projects = [{
   logo: "img/logo-doubleup.webp"
 }, {
   name: "Haedal",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "Liquid staking protocol enabling yield with full token liquidity.",
   site: "https://www.haedal.xyz/",
   x: "https://x.com/haedalprotocol",
@@ -199,7 +199,7 @@ const projects = [{
   logo: "img/logo-scallop.webp"
 }, {
   name: "Navi Protocol",
-  category: "DeFi",
+  category: "DeFi, Lending",
   description: "Lending and liquid staking platform with leverage strategies.",
   site: "https://naviprotocol.io/",
   x: "https://x.com/navi_protocol",
@@ -207,7 +207,7 @@ const projects = [{
   logo: "img/logo-naviprotocol.webp"
 }, {
   name: "FlowX Finance",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "DEX and liquidity aggregator with yield farming and IDO support.",
   site: "https://flowx.finance/",
   x: "https://x.com/FlowX_finance",
@@ -215,7 +215,7 @@ const projects = [{
   logo: "img/logo-flowxfinance.webp"
 }, {
   name: "Kriya",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "Comprehensive DeFi protocol offering AMM swaps, limit orders, vaults, and leveraged perpetuals.",
   site: "https://kriya.finance/",
   x: "https://x.com/KriyaDEX",
@@ -231,7 +231,7 @@ const projects = [{
   logo: "img/logo-bucketprotocol.webp"
 }, {
   name: "Sui Name Service",
-  category: "SocialFi",
+  category: "SocialFi, Infrastructure",
   description: "Decentralized name service. Allows domain registration and linking to wallets and contracts.",
   site: "https://suins.io/",
   x: "https://x.com/suinsdapp",
@@ -239,7 +239,7 @@ const projects = [{
   logo: "img/logo-suinameservice.webp"
 }, {
   name: "Cetus",
-  category: "DeFi",
+  category: "DeFi, Aggregator, Launchpad",
   description: "Decentralized exchange with concentrated liquidity, enabling efficient trading, range orders, and liquidity as a service.",
   site: "https://www.cetus.zone/",
   x: "https://x.com/CetusProtocol",
@@ -271,7 +271,7 @@ const projects = [{
   logo: "img/logo-sui.webp"
 }, {
   name: "Cosmocadia",
-  category: "GameFi",
+  category: "Gaming",
   description: "Cosmocadia is a cooperative sandbox farming game in which players grow land and trade NFTs.",
   site: "https://www.cosmocadia.io/",
   x: "https://x.com/Cosmocadia",
@@ -295,7 +295,7 @@ const projects = [{
   logo: "img/logo-slushwallet.webp"
 }, {
   name: "Anima",
-  category: "GameFi",
+  category: "Gaming",
   description: "Web3 studio offering no-code NFT tools for games and virtual worlds.",
   site: "https://anima.nexus/",
   x: "https://x.com/animalabs_io",
@@ -335,7 +335,7 @@ const projects = [{
   logo: "img/logo-chirp.webp"
 }, {
   name: "DeSuiLabs",
-  category: "GameFi",
+  category: "Gaming",
   description: "Web3 competition platform with gamified experiences for a unique user experience.",
   site: "https://www.desuilabs.io/",
   x: "https://x.com/DeSuiLabs",
@@ -343,7 +343,7 @@ const projects = [{
   logo: "img/logo-desuilabs.webp"
 }, {
   name: "Stratton Labs",
-  category: "GameFi",
+  category: "Gaming",
   description: "A studio specializing in the development of games that combine DeFi and GameFi.",
   site: null,
   x: "https://x.com/Strattonweb3",
@@ -351,7 +351,7 @@ const projects = [{
   logo: "img/logo-strattonlabs.webp"
 }, {
   name: "ONE Fight Arena",
-  category: "GameFi",
+  category: "Gaming",
   description: "A mobile Web3 match-3 game with MMA-style PvP battles.",
   site: "https://onefightarena.com/",
   x: "https://x.com/onefightarena",
@@ -511,7 +511,7 @@ const projects = [{
   logo: "img/logo-pebble.webp"
 }, {
   name: "Astros",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "Decentralized platform for token swaps and perpetual contracts with low fees and high speed.",
   site: "https://astros.ag/",
   x: "https://x.com/astros_ag",
@@ -519,7 +519,7 @@ const projects = [{
   logo: "img/logo-astros.webp"
 }, {
   name: "Wave",
-  category: "DeFi",
+  category: "DeFi, GameFi",
   description: "An ecosystem combining DeFi, GameFi, and AI applications in one place, easily accessible via Telegram.",
   site: "https://waveonsui.com/",
   x: "https://x.com/WaveOnSui",
@@ -575,12 +575,12 @@ const projects = [{
   logo: "img/logo-shio.webp"
 }, {
   name: "Kai Finance",
-  category: "DeFi",
+  category: "DeFi, Yield Aggregator",
   description: "A passive income platform with leverage for yield farming and automatic interest accrual.",
   site: "https://kai.finance/",
   x: "https://x.com/kai_finance_sui",
   discord: "https://discord.com/invite/XV2xYZjReX",
-  logo: "img/logo-shio.webp"
+  logo: "img/logo-kaifinance.webp"
 }, {
   name: "Rockee",
   category: "DeFi",
@@ -591,7 +591,7 @@ const projects = [{
   logo: "img/logo-rockee.webp"
 }, {
   name: "ZO",
-  category: "DeFi",
+  category: "DeFi, Perpetual",
   description: "Decentralized perpetual trading protocol offering fast execution, deep liquidity, AI assistant, and support for any collateral.",
   site: "https://zofai.io/",
   x: "https://x.com/zofaiperps",
@@ -623,7 +623,7 @@ const projects = [{
   logo: "img/logo-lotus.webp"
 }, {
   name: "Cro.Ag",
-  category: "DeFi",
+  category: "DeFi, Aggregator",
   description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup.",
   site: "https://cro.ag/",
   x: "https://x.com/cro_aggregator",
@@ -631,7 +631,7 @@ const projects = [{
   logo: "img/logo-croag.webp"
 }, {
   name: "Noodles Finance",
-  category: "DeFi",
+  category: "DeFi, Analytics",
   description: "A multifunctional DeFi protocol combining trading, analytics, and social features.",
   site: "https://noodles.fi/",
   x: "https://x.com/NoodlesFi",
@@ -743,7 +743,7 @@ const projects = [{
   logo: "img/logo-xportal.webp"
 }, {
   name: "Birds",
-  category: "AI",
+  category: "AI, Gaming",
   description: "A platform that combines gaming, artificial intelligence, and creative tools. It streamlines AI integration and supports content creation.",
   site: "https://thebirds.ai/",
   x: "https://x.com/TheBirdsDogs",
@@ -767,7 +767,7 @@ const projects = [{
   logo: "img/logo-moviepass.webp"
 }, {
   name: "Metastable",
-  category: "DeFi",
+  category: "DeFi, LST",
   description: "A decentralized financial platform focused on simplifying stablecoin usage and providing unified liquidity.",
   site: "https://mstable.io/",
   x: "https://x.com/MetaStables",
