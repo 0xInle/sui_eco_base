@@ -28,7 +28,8 @@ const projects = [{
   site: "https://hop.ag/",
   x: "https://x.com/HopAggregator",
   discord: null,
-  logo: "img/logo-hop.webp"
+  logo: "img/logo-hop.webp",
+  drop: null
 }, {
   name: "FanTV",
   category: "SocialFi",
@@ -36,7 +37,8 @@ const projects = [{
   site: "https://fantv.in/",
   x: "https://x.com/FanTV_official",
   discord: "https://discord.com/invite/U45TV7prJe",
-  logo: "img/logo-fantv.webp"
+  logo: "img/logo-fantv.webp",
+  drop: null
 }, {
   name: "Tusky",
   category: "Storage",
@@ -44,7 +46,8 @@ const projects = [{
   site: "https://app.tusky.io/",
   x: "https://x.com/TuskyTools",
   discord: "https://discord.com/invite/Vsjpghdhb3",
-  logo: "img/logo-tusky.webp"
+  logo: "img/logo-tusky.webp",
+  drop: null
 }, {
   name: "Bread Walrus",
   category: "DeFi, LST",
@@ -52,7 +55,8 @@ const projects = [{
   site: null,
   x: "https://x.com/BreadWalrusLST",
   discord: null,
-  logo: "img/logo-breadwalrus.webp"
+  logo: "img/logo-breadwalrus.webp",
+  drop: null
 }, {
   name: "Winter Walrus",
   category: "DeFi, LST",
@@ -60,7 +64,8 @@ const projects = [{
   site: "https://www.winterwalrus.com/",
   x: "https://x.com/WalrusLST",
   discord: null,
-  logo: "img/logo-winterwalrus.webp"
+  logo: "img/logo-winterwalrus.webp",
+  drop: null
 }, {
   name: "Steamm",
   category: "DeFi",
@@ -68,7 +73,8 @@ const projects = [{
   site: "https://steamm.fi/",
   x: "https://x.com/steammfi",
   discord: null,
-  logo: "img/logo-steamm.webp"
+  logo: "img/logo-steamm.webp",
+  drop: "Points"
 }, {
   name: "Volo",
   category: "DeFi, LST",
@@ -76,7 +82,8 @@ const projects = [{
   site: "https://www.volosui.com/",
   x: "https://x.com/volo_sui",
   discord: "https://discord.com/invite/volo-1074826764645314621",
-  logo: "img/logo-volo.webp"
+  logo: "img/logo-volo.webp",
+  drop: "Points"
 }, {
   name: "SpringSui",
   category: "DeFi, LST",
@@ -84,7 +91,8 @@ const projects = [{
   site: "https://springsui.com/",
   x: "https://x.com/springsui_",
   discord: null,
-  logo: "img/logo-springsui.webp"
+  logo: "img/logo-springsui.webp",
+  drop: null
 }, {
   name: "Magma Finance",
   category: "DeFi, Aggregator",
@@ -92,7 +100,8 @@ const projects = [{
   site: "https://magmafinance.io/",
   x: "https://x.com/Magma_Finance",
   discord: "https://discord.com/invite/EZ7MFfn7DJ",
-  logo: "img/logo-magmafinance.webp"
+  logo: "img/logo-magmafinance.webp",
+  drop: null
 }, {
   name: "DeepBook",
   category: "DeFi",
@@ -100,7 +109,8 @@ const projects = [{
   site: "https://deepbook.tech/",
   x: "https://x.com/DeepBookonSui",
   discord: "https://discord.com/invite/deepbook",
-  logo: "img/logo-deepbook.webp"
+  logo: "img/logo-deepbook.webp",
+  drop: null
 }, {
   name: "WinX",
   category: "GambleFi",
@@ -108,7 +118,8 @@ const projects = [{
   site: "https://winx.io/",
   x: "https://x.com/WinX_io",
   discord: "https://discord.com/invite/t6MJFKn633",
-  logo: "img/logo-winx.webp"
+  logo: "img/logo-winx.webp",
+  drop: null
 }, {
   name: "Sudo Finance",
   category: "DeFi, Perpetual",
@@ -116,7 +127,8 @@ const projects = [{
   site: "https://www.sudo.finance/",
   x: "https://x.com/sudofinance",
   discord: "https://discord.com/invite/6HYG9S2UyC",
-  logo: "img/logo-sudofinance.webp"
+  logo: "img/logo-sudofinance.webp",
+  drop: "Points"
 }, {
   name: "Suilend",
   category: "DeFi, Lending",
@@ -124,7 +136,8 @@ const projects = [{
   site: "https://suilend.fi/",
   x: "https://x.com/suilendprotocol",
   discord: "https://discord.com/invite/suilend",
-  logo: "img/logo-suilend.webp"
+  logo: "img/logo-suilend.webp",
+  drop: "Drop"
 }, {
   name: "Walrus",
   category: "Storage",
@@ -132,7 +145,8 @@ const projects = [{
   site: "https://www.walrus.xyz/",
   x: "https://x.com/WalrusProtocol",
   discord: "https://discord.com/invite/walrusprotocol",
-  logo: "img/logo-walrus.webp"
+  logo: "img/logo-walrus.webp",
+  drop: "Drop"
 }, {
   name: "Aftermath Finance",
   category: "DeFi, LST, Aggregator",
@@ -140,7 +154,8 @@ const projects = [{
   site: "https://aftermath.finance/",
   x: "https://x.com/AftermathFi/",
   discord: "https://discord.com/invite/KvVCAauXk5",
-  logo: "img/logo-aftermathfinance.webp"
+  logo: "img/logo-aftermathfinance.webp",
+  drop: null
 }, {
   name: "Turbos Finance",
   category: "DeFi, Launchpad",
@@ -148,7 +163,8 @@ const projects = [{
   site: "https://turbos.finance/",
   x: "https://x.com/Turbos_finance/",
   discord: "https://discord.com/invite/xFdDdDzA8W",
-  logo: "img/logo-turbosfinance.webp"
+  logo: "img/logo-turbosfinance.webp",
+  drop: null
 }, {
   name: "7K Smart Trading",
   category: "DeFi, Aggregator, Launchpad",
@@ -156,7 +172,8 @@ const projects = [{
   site: "https://port.7k.ag/",
   x: "https://x.com/7k_ag_",
   discord: "https://discord.com/invite/vNhgKEawXn",
-  logo: "img/logo-7k.webp"
+  logo: "img/logo-7k.webp",
+  drop: null
 }, {
   name: "AlphaFi",
   category: "DeFi, LST, Yield Aggregator",
@@ -164,7 +181,8 @@ const projects = [{
   site: "https://alphafi.xyz/",
   x: "https://x.com/AlphaFiSUI",
   discord: "https://discord.com/invite/Pn6cKUSqSs",
-  logo: "img/logo-alphafi.webp"
+  logo: "img/logo-alphafi.webp",
+  drop: null
 }, {
   name: "Bluefin",
   category: "DeFi, Perpetual",
@@ -172,7 +190,8 @@ const projects = [{
   site: "https://bluefin.io/",
   x: "https://x.com/bluefinapp",
   discord: "https://discord.com/invite/bluefinapp",
-  logo: "img/logo-bluefin.webp"
+  logo: "img/logo-bluefin.webp",
+  drop: null
 }, {
   name: "DoubleUp",
   category: "GambleFi, Launchpad",
@@ -180,7 +199,8 @@ const projects = [{
   site: "https://www.doubleup.fun/",
   x: "https://x.com/doubleup_app",
   discord: "https://discord.com/invite/doubleupapp",
-  logo: "img/logo-doubleup.webp"
+  logo: "img/logo-doubleup.webp",
+  drop: null
 }, {
   name: "Haedal",
   category: "DeFi, LST",
@@ -188,7 +208,8 @@ const projects = [{
   site: "https://www.haedal.xyz/",
   x: "https://x.com/haedalprotocol",
   discord: "https://discord.com/invite/haedalprotocol",
-  logo: "img/logo-haedal.webp"
+  logo: "img/logo-haedal.webp",
+  drop: null
 }, {
   name: "Scallop",
   category: "DeFi, Lending",
@@ -196,7 +217,8 @@ const projects = [{
   site: "https://scallop.io/",
   x: "https://x.com/Scallop_io",
   discord: "https://discord.com/invite/F7umecFArJ",
-  logo: "img/logo-scallop.webp"
+  logo: "img/logo-scallop.webp",
+  drop: null
 }, {
   name: "Navi Protocol",
   category: "DeFi, Lending",
@@ -204,7 +226,8 @@ const projects = [{
   site: "https://naviprotocol.io/",
   x: "https://x.com/navi_protocol",
   discord: "https://discord.com/invite/R6Xkbee8Xq",
-  logo: "img/logo-naviprotocol.webp"
+  logo: "img/logo-naviprotocol.webp",
+  drop: "Points"
 }, {
   name: "FlowX Finance",
   category: "DeFi, Aggregator",
@@ -212,7 +235,8 @@ const projects = [{
   site: "https://flowx.finance/",
   x: "https://x.com/FlowX_finance",
   discord: "https://discord.com/invite/flowx-1075716902111936564",
-  logo: "img/logo-flowxfinance.webp"
+  logo: "img/logo-flowxfinance.webp",
+  drop: null
 }, {
   name: "Kriya",
   category: "DeFi, Aggregator",
@@ -220,7 +244,8 @@ const projects = [{
   site: "https://kriya.finance/",
   x: "https://x.com/KriyaDEX",
   discord: "https://discord.com/invite/kriya",
-  logo: "img/logo-kriya.webp"
+  logo: "img/logo-kriya.webp",
+  drop: null
 }, {
   name: "Bucket Protocol",
   category: "DeFi",
@@ -228,7 +253,8 @@ const projects = [{
   site: "https://www.bucketprotocol.io/",
   x: "https://x.com/bucket_protocol",
   discord: "https://discord.com/invite/nYCnNJE6Tr",
-  logo: "img/logo-bucketprotocol.webp"
+  logo: "img/logo-bucketprotocol.webp",
+  drop: null
 }, {
   name: "Sui Name Service",
   category: "SocialFi, Infrastructure",
@@ -236,7 +262,8 @@ const projects = [{
   site: "https://suins.io/",
   x: "https://x.com/suinsdapp",
   discord: "https://discord.com/invite/suins",
-  logo: "img/logo-suinameservice.webp"
+  logo: "img/logo-suinameservice.webp",
+  drop: null
 }, {
   name: "Cetus",
   category: "DeFi, Aggregator, Launchpad",
@@ -244,7 +271,8 @@ const projects = [{
   site: "https://www.cetus.zone/",
   x: "https://x.com/CetusProtocol",
   discord: "https://discord.com/invite/cetusprotocol",
-  logo: "img/logo-cetus.webp"
+  logo: "img/logo-cetus.webp",
+  drop: null
 }, {
   name: "Full Sail",
   category: "DeFi",
@@ -252,7 +280,8 @@ const projects = [{
   site: "https://www.fullsail.finance/",
   x: "https://x.com/fullsailfi",
   discord: "https://discord.com/invite/fullsailfi",
-  logo: "img/logo-fullsail.webp"
+  logo: "img/logo-fullsail.webp",
+  drop: null
 }, {
   name: "Soundness",
   category: "Infrastructure",
@@ -260,7 +289,8 @@ const projects = [{
   site: "https://soundness.xyz/",
   x: "https://x.com/SoundnessLabs",
   discord: "https://discord.com/invite/E7YeREX6aU",
-  logo: "img/logo-soundness.webp"
+  logo: "img/logo-soundness.webp",
+  drop: "Testnet"
 }, {
   name: "Sui Bridge",
   category: "Bridge",
@@ -268,7 +298,8 @@ const projects = [{
   site: "https://bridge.sui.io/",
   x: "https://x.com/SuiNetwork",
   discord: "https://discord.com/invite/sui",
-  logo: "img/logo-sui.webp"
+  logo: "img/logo-sui.webp",
+  drop: null
 }, {
   name: "Cosmocadia",
   category: "Gaming",
@@ -276,7 +307,8 @@ const projects = [{
   site: "https://www.cosmocadia.io/",
   x: "https://x.com/Cosmocadia",
   discord: "https://discord.com/invite/cosmocadia",
-  logo: "img/logo-сosmocadia.webp"
+  logo: "img/logo-сosmocadia.webp",
+  drop: null
 }, {
   name: "TradePort",
   category: "Nft Marketplace",
@@ -284,7 +316,8 @@ const projects = [{
   site: "https://www.tradeport.xyz/",
   x: "https://x.com/tradeportxyz",
   discord: "https://discord.com/invite/vna9xzdDK4",
-  logo: "img/logo-tradeport.webp"
+  logo: "img/logo-tradeport.webp",
+  drop: null
 }, {
   name: "Slush Wallet",
   category: "Wallet",
@@ -292,7 +325,8 @@ const projects = [{
   site: "https://slush.app/",
   x: "https://x.com/SlushWallet",
   discord: "https://discord.com/invite/sui",
-  logo: "img/logo-slushwallet.webp"
+  logo: "img/logo-slushwallet.webp",
+  drop: null
 }, {
   name: "Anima",
   category: "Gaming",
@@ -300,7 +334,8 @@ const projects = [{
   site: "https://anima.nexus/",
   x: "https://x.com/animalabs_io",
   discord: "https://discord.com/invite/7AuvnpqZQe",
-  logo: "img/logo-anima.webp"
+  logo: "img/logo-anima.webp",
+  drop: null
 }, {
   name: "Artfi",
   category: "RWA",
@@ -308,7 +343,8 @@ const projects = [{
   site: "https://artfi.world/",
   x: "https://x.com/artfiglobal",
   discord: "https://discord.gg/artfi-997391352369254512",
-  logo: "img/logo-artfi.webp"
+  logo: "img/logo-artfi.webp",
+  drop: null
 }, {
   name: "Arttoo",
   category: "RWA",
@@ -316,7 +352,8 @@ const projects = [{
   site: "https://arttoo.co.uk/",
   x: "https://x.com/arttoo_official",
   discord: null,
-  logo: "img/logo-arttoo.webp"
+  logo: "img/logo-arttoo.webp",
+  drop: null
 }, {
   name: "BlueMove",
   category: "Nft Marketplace",
@@ -324,7 +361,8 @@ const projects = [{
   site: "https://sui.bluemove.net/",
   x: "https://x.com/BlueMove_OA",
   discord: "https://discord.com/invite/7eXkAnyeCV",
-  logo: "img/logo-bluemove.webp"
+  logo: "img/logo-bluemove.webp",
+  drop: null
 }, {
   name: "Chirp",
   category: "DePin",
@@ -332,7 +370,8 @@ const projects = [{
   site: "https://chirptoken.io/",
   x: "https://x.com/ChirpDeWi",
   discord: "hhttps://discord.com/invite/zxAaVQgFvs",
-  logo: "img/logo-chirp.webp"
+  logo: "img/logo-chirp.webp",
+  drop: null
 }, {
   name: "DeSuiLabs",
   category: "Gaming",
@@ -340,7 +379,8 @@ const projects = [{
   site: "https://www.desuilabs.io/",
   x: "https://x.com/DeSuiLabs",
   discord: "https://discord.com/invite/2Cfm9gpTCu",
-  logo: "img/logo-desuilabs.webp"
+  logo: "img/logo-desuilabs.webp",
+  drop: null
 }, {
   name: "Stratton Labs",
   category: "Gaming",
@@ -348,7 +388,8 @@ const projects = [{
   site: null,
   x: "https://x.com/Strattonweb3",
   discord: null,
-  logo: "img/logo-strattonlabs.webp"
+  logo: "img/logo-strattonlabs.webp",
+  drop: null
 }, {
   name: "ONE Fight Arena",
   category: "Gaming",
@@ -356,7 +397,8 @@ const projects = [{
   site: "https://onefightarena.com/",
   x: "https://x.com/onefightarena",
   discord: "https://discord.com/invite/Unr2CECBJc",
-  logo: "img/logo-onefightarena.webp"
+  logo: "img/logo-onefightarena.webp",
+  drop: null
 }, {
   name: "Fewcha Wallet",
   category: "Wallet",
@@ -364,7 +406,8 @@ const projects = [{
   site: "https://fewcha.app/",
   x: "https://x.com/fewchawallet",
   discord: null,
-  logo: "img/logo-fewchawallet.webp"
+  logo: "img/logo-fewchawallet.webp",
+  drop: null
 }, {
   name: "Ika",
   category: "Infrastructure",
@@ -372,7 +415,8 @@ const projects = [{
   site: "https://ika.xyz/",
   x: "https://x.com/ikadotxyz",
   discord: "https://discord.com/invite/ikadotxyz",
-  logo: "img/logo-ika.webp"
+  logo: "img/logo-ika.webp",
+  drop: "Drop"
 }, {
   name: "Karrier One",
   category: "Infrastructure",
@@ -380,7 +424,8 @@ const projects = [{
   site: "https://www.karrier.one/",
   x: "https://x.com/karrier_one",
   discord: "https://discord.com/invite/karrierone",
-  logo: "img/logo-karrierone.webp"
+  logo: "img/logo-karrierone.webp",
+  drop: "Drop"
 }, {
   name: "MovePump",
   category: "Launchpad",
@@ -388,7 +433,8 @@ const projects = [{
   site: "https://movepump.com/",
   x: "https://x.com/BlueMove_OA",
   discord: "https://discord.com/invite/7eXkAnyeCV",
-  logo: "img/logo-movepump.webp"
+  logo: "img/logo-movepump.webp",
+  drop: null
 }, {
   name: "Nightly Wallet",
   category: "Wallet",
@@ -396,7 +442,8 @@ const projects = [{
   site: "https://nightly.app/",
   x: "https://x.com/Nightly_app",
   discord: "https://discord.com/invite/7nhFHA6yZq",
-  logo: "img/logo-nightlywallet.webp"
+  logo: "img/logo-nightlywallet.webp",
+  drop: null
 }, {
   name: "Polymedia",
   category: "Infrastructure",
@@ -404,7 +451,8 @@ const projects = [{
   site: "https://polymedia.app/",
   x: "https://x.com/polymedia_app",
   discord: null,
-  logo: "img/logo-polymedia.webp"
+  logo: "img/logo-polymedia.webp",
+  drop: null
 }, {
   name: "Shadow",
   category: "Nft Marketplace",
@@ -412,7 +460,8 @@ const projects = [{
   site: "https://shadow.app/",
   x: "https://x.com/shadow_sui",
   discord: null,
-  logo: "img/logo-shadow.webp"
+  logo: "img/logo-shadow.webp",
+  drop: null
 }, {
   name: "Shadow Wallet",
   category: "Wallet",
@@ -420,7 +469,8 @@ const projects = [{
   site: null,
   x: "https://x.com/shadow_sui",
   discord: null,
-  logo: "img/logo-shadow.webp"
+  logo: "img/logo-shadow.webp",
+  drop: null
 }, {
   name: "Spritz Finance",
   category: "Payments",
@@ -428,7 +478,8 @@ const projects = [{
   site: "https://www.spritz.finance/",
   x: "https://x.com/spritzfinance",
   discord: null,
-  logo: "img/logo-spritzfinance.webp"
+  logo: "img/logo-spritzfinance.webp",
+  drop: null
 }, {
   name: "Studio Mirai",
   category: "Infrastructure",
@@ -436,7 +487,8 @@ const projects = [{
   site: null,
   x: "https://x.com/_StudioMirai",
   discord: "https://discord.com/invite/studiomirai",
-  logo: "img/logo-studiomirai.webp"
+  logo: "img/logo-studiomirai.webp",
+  drop: null
 }, {
   name: "Suiet",
   category: "Wallet",
@@ -444,7 +496,8 @@ const projects = [{
   site: "https://suiet.app/",
   x: "https://x.com/suiet_wallet",
   discord: "https://discord.com/invite/XQspMzXNXu",
-  logo: "img/logo-suiet.webp"
+  logo: "img/logo-suiet.webp",
+  drop: null
 }, {
   name: "SuiPlay",
   category: "Others",
@@ -452,7 +505,8 @@ const projects = [{
   site: "https://www.suiplay0x1.com/",
   x: "https://x.com/SuiPlay",
   discord: "https://discord.com/invite/suiplay",
-  logo: "img/logo-suiplay.webp"
+  logo: "img/logo-suiplay.webp",
+  drop: null
 }, {
   name: "Suiscan",
   category: "Analytics",
@@ -460,7 +514,8 @@ const projects = [{
   site: "https://suiscan.xyz/",
   x: "https://x.com/suiscanofficial",
   discord: "https://discord.com/invite/UBQ85uSyAU",
-  logo: "img/logo-suiscan.webp"
+  logo: "img/logo-suiscan.webp",
+  drop: null
 }, {
   name: "SuiVision",
   category: "Analytics",
@@ -468,7 +523,8 @@ const projects = [{
   site: "https://suivision.xyz/",
   x: "https://x.com/blockvisionhq",
   discord: "https://discord.com/invite/blockvision",
-  logo: "img/logo-suivision.webp"
+  logo: "img/logo-suivision.webp",
+  drop: null
 }, {
   name: "Surf Wallet",
   category: "Wallet",
@@ -476,7 +532,8 @@ const projects = [{
   site: "https://surf.tech/",
   x: "https://x.com/surf_wallet",
   discord: null,
-  logo: "img/logo-surfwallet.webp"
+  logo: "img/logo-surfwallet.webp",
+  drop: null
 }, {
   name: "Typus Finance",
   category: "DeFi",
@@ -484,7 +541,8 @@ const projects = [{
   site: "https://typus.finance/",
   x: "https://x.com/TypusFinance",
   discord: "https://discord.com/invite/pzETKp6zvr",
-  logo: "img/logo-typusfinance.webp"
+  logo: "img/logo-typusfinance.webp",
+  drop: null
 }, {
   name: "Recrd",
   category: "SocialFi",
@@ -492,7 +550,8 @@ const projects = [{
   site: "https://www.recrd.com/",
   x: "https://x.com/RECRDapp",
   discord: null,
-  logo: "img/logo-recrd.webp"
+  logo: "img/logo-recrd.webp",
+  drop: null
 }, {
   name: "Momentum",
   category: "DeFi",
@@ -500,7 +559,8 @@ const projects = [{
   site: "https://app.mmt.finance/",
   x: "https://x.com/MMTFinance",
   discord: "https://discord.com/invite/mmtfinance",
-  logo: "img/logo-momentum.webp"
+  logo: "img/logo-momentum.webp",
+  drop: "Points"
 }, {
   name: "Pebble",
   category: "GambleFi",
@@ -508,7 +568,8 @@ const projects = [{
   site: "https://www.pebblestream.io/",
   x: "https://x.com/PebblePlay",
   discord: null,
-  logo: "img/logo-pebble.webp"
+  logo: "img/logo-pebble.webp",
+  drop: null
 }, {
   name: "Astros",
   category: "DeFi, Aggregator",
@@ -516,7 +577,8 @@ const projects = [{
   site: "https://astros.ag/",
   x: "https://x.com/astros_ag",
   discord: "https://discord.com/invite/R6Xkbee8Xq",
-  logo: "img/logo-astros.webp"
+  logo: "img/logo-astros.webp",
+  drop: null
 }, {
   name: "Wave",
   category: "DeFi, GameFi",
@@ -524,7 +586,8 @@ const projects = [{
   site: "https://waveonsui.com/",
   x: "https://x.com/WaveOnSui",
   discord: "https://discord.com/invite/waveonsui",
-  logo: "img/logo-wave.webp"
+  logo: "img/logo-wave.webp",
+  drop: null
 }, {
   name: "Obric",
   category: "DeFi",
@@ -532,7 +595,8 @@ const projects = [{
   site: "https://obric.xyz/",
   x: "https://x.com/poor_obric",
   discord: null,
-  logo: "img/logo-obric.webp"
+  logo: "img/logo-obric.webp",
+  drop: null
 }, {
   name: "Sui Passport",
   category: "Others",
@@ -540,7 +604,8 @@ const projects = [{
   site: "https://www.suipassport.app/",
   x: "https://x.com/SuiFamOfficial",
   discord: null,
-  logo: "img/logo-suipassport.webp"
+  logo: "img/logo-suipassport.webp",
+  drop: null
 }, {
   name: "Talentum",
   category: "SocialFi",
@@ -548,7 +613,8 @@ const projects = [{
   site: "https://talentum.id/",
   x: "https://x.com/TalentumID",
   discord: "https://discord.com/invite/GG3Q4CEv29",
-  logo: "img/logo-talentum.webp"
+  logo: "img/logo-talentum.webp",
+  drop: null
 }, {
   name: "RaidenX",
   category: "DeFi",
@@ -556,7 +622,8 @@ const projects = [{
   site: "https://raidenx.io/",
   x: "https://x.com/raidenx_io",
   discord: null,
-  logo: "img/logo-raidenx.webp"
+  logo: "img/logo-raidenx.webp",
+  drop: null
 }, {
   name: "Suiswap",
   category: "DeFi",
@@ -564,7 +631,8 @@ const projects = [{
   site: "https://suiswap.app/",
   x: "https://x.com/suiswap_app",
   discord: "https://discord.com/invite/suiswap",
-  logo: "img/logo-suiswap.webp"
+  logo: "img/logo-suiswap.webp",
+  drop: null
 }, {
   name: "Shio",
   category: "Infrastructure",
@@ -572,7 +640,8 @@ const projects = [{
   site: "https://www.getshio.com/",
   x: "https://x.com/ShioLabs",
   discord: null,
-  logo: "img/logo-shio.webp"
+  logo: "img/logo-shio.webp",
+  drop: null
 }, {
   name: "Kai Finance",
   category: "DeFi, Yield Aggregator",
@@ -580,7 +649,8 @@ const projects = [{
   site: "https://kai.finance/",
   x: "https://x.com/kai_finance_sui",
   discord: "https://discord.com/invite/XV2xYZjReX",
-  logo: "img/logo-kaifinance.webp"
+  logo: "img/logo-kaifinance.webp",
+  drop: null
 }, {
   name: "Rockee",
   category: "DeFi",
@@ -588,7 +658,8 @@ const projects = [{
   site: "https://rockee.ai/",
   x: "https://x.com/rockeeAI",
   discord: null,
-  logo: "img/logo-rockee.webp"
+  logo: "img/logo-rockee.webp",
+  drop: null
 }, {
   name: "ZO",
   category: "DeFi, Perpetual",
@@ -596,7 +667,8 @@ const projects = [{
   site: "https://zofai.io/",
   x: "https://x.com/zofaiperps",
   discord: "https://discord.com/invite/RRfXR9VTfd",
-  logo: "img/logo-zo.webp"
+  logo: "img/logo-zo.webp",
+  drop: null
 }, {
   name: "Mole",
   category: "DeFi",
@@ -604,7 +676,8 @@ const projects = [{
   site: "https://mole.fi/",
   x: "https://x.com/moledefi",
   discord: "https://discord.com/invite/JfgJzJ8kkK",
-  logo: "img/logo-mole.webp"
+  logo: "img/logo-mole.webp",
+  drop: null
 }, {
   name: "Vram.Ai",
   category: "AI",
@@ -612,7 +685,8 @@ const projects = [{
   site: "https://www.vram.ai/",
   x: "https://x.com/vramxai",
   discord: "https://discord.com/invite/G3rvmPmztp",
-  logo: "img/logo-vramai.webp"
+  logo: "img/logo-vramai.webp",
+  drop: "Drop"
 }, {
   name: "Lotus Finance",
   category: "DeFi",
@@ -620,7 +694,8 @@ const projects = [{
   site: "https://beta.lotusfinance.io/",
   x: "https://x.com/Lotusfinance_io",
   discord: "https://discord.com/invite/lotusfinance",
-  logo: "img/logo-lotus.webp"
+  logo: "img/logo-lotus.webp",
+  drop: null
 }, {
   name: "Cro.Ag",
   category: "DeFi, Aggregator",
@@ -628,7 +703,8 @@ const projects = [{
   site: "https://cro.ag/",
   x: "https://x.com/cro_aggregator",
   discord: "https://discord.com/invite/UG6c7nXr5X",
-  logo: "img/logo-croag.webp"
+  logo: "img/logo-croag.webp",
+  drop: "Points"
 }, {
   name: "Noodles Finance",
   category: "DeFi, Analytics",
@@ -636,7 +712,8 @@ const projects = [{
   site: "https://noodles.fi/",
   x: "https://x.com/NoodlesFi",
   discord: null,
-  logo: "img/logo-noodlesfinance.webp"
+  logo: "img/logo-noodlesfinance.webp",
+  drop: null
 }, {
   name: "GiveRep",
   category: "SocialFi",
@@ -644,7 +721,8 @@ const projects = [{
   site: "https://giverep.com/",
   x: "https://x.com/GiveRep",
   discord: null,
-  logo: "img/logo-giverep.webp"
+  logo: "img/logo-giverep.webp",
+  drop: null
 }, {
   name: "Suigar",
   category: "GambleFi",
@@ -652,7 +730,8 @@ const projects = [{
   site: "https://suigar.com/",
   x: "https://x.com/Suigar_com",
   discord: "https://discord.com/invite/tAYGd46ZUK",
-  logo: "img/logo-suigar.webp"
+  logo: "img/logo-suigar.webp",
+  drop: null
 }, {
   name: "Hokko",
   category: "Nft Marketplace",
@@ -660,7 +739,8 @@ const projects = [{
   site: "https://www.hokko.io/",
   x: "https://x.com/hokko_io",
   discord: null,
-  logo: "img/logo-hokko.webp"
+  logo: "img/logo-hokko.webp",
+  drop: null
 }, {
   name: "Bolt Liquidity",
   category: "Infrastructure",
@@ -668,7 +748,8 @@ const projects = [{
   site: "https://www.boltliquidity.io/",
   x: "https://x.com/BoltLiquidity",
   discord: null,
-  logo: "img/logo-boltliquidity.webp"
+  logo: "img/logo-boltliquidity.webp",
+  drop: null
 }, {
   name: "Tugboat.Fi",
   category: "DeFi",
@@ -676,7 +757,8 @@ const projects = [{
   site: "https://www.tugboat.fi/",
   x: "https://x.com/tugboatdotfi",
   discord: null,
-  logo: "img/logo-tugboatfi.webp"
+  logo: "img/logo-tugboatfi.webp",
+  drop: null
 }, {
   name: "Pawtato Finance",
   category: "Analytics",
@@ -684,7 +766,8 @@ const projects = [{
   site: "https://pawtato.finance/",
   x: "https://x.com/PawtatoFinance",
   discord: "https://discord.com/invite/fNEAnHD4RV",
-  logo: "img/logo-pawtatofinance.webp"
+  logo: "img/logo-pawtatofinance.webp",
+  drop: "Points"
 }, {
   name: "Moonbags",
   category: "Launchpad",
@@ -692,7 +775,8 @@ const projects = [{
   site: "https://moonbags.io/",
   x: "https://x.com/moonbags_io",
   discord: null,
-  logo: "img/logo-moonbags.webp"
+  logo: "img/logo-moonbags.webp",
+  drop: null
 }, {
   name: "SuiBets",
   category: "GambleFi",
@@ -700,7 +784,8 @@ const projects = [{
   site: "https://suibets.com/",
   x: "https://x.com/Sui_Bets/",
   discord: null,
-  logo: "img/logo-suibets.webp"
+  logo: "img/logo-suibets.webp",
+  drop: null
 }, {
   name: "CoinDrip",
   category: "Others",
@@ -708,7 +793,8 @@ const projects = [{
   site: "https://coindrip.finance/",
   x: "https://x.com/CoinDripHQ",
   discord: null,
-  logo: "img/logo-coindrip.webp"
+  logo: "img/logo-coindrip.webp",
+  drop: null
 }, {
   name: "Atoma",
   category: "AI",
@@ -716,7 +802,8 @@ const projects = [{
   site: "https://atoma.network/",
   x: "https://x.com/Atoma_Network",
   discord: "https://discord.com/invite/atoma",
-  logo: "img/logo-atoma.webp"
+  logo: "img/logo-atoma.webp",
+  drop: null
 }, {
   name: "Deeptrade",
   category: "DeFi",
@@ -724,7 +811,8 @@ const projects = [{
   site: "https://deeptrade.io/",
   x: "https://x.com/_deeptrade",
   discord: null,
-  logo: "img/logo-deeptrade.webp"
+  logo: "img/logo-deeptrade.webp",
+  drop: null
 }, {
   name: "PinataBot",
   category: "Others",
@@ -732,7 +820,8 @@ const projects = [{
   site: "https://market.pinatabot.com/",
   x: "https://x.com/PinataBotOnSui",
   discord: null,
-  logo: "img/logo-pinatabot.webp"
+  logo: "img/logo-pinatabot.webp",
+  drop: null
 }, {
   name: "xPortal",
   category: "Wallet",
@@ -740,7 +829,8 @@ const projects = [{
   site: "https://xportal.com/",
   x: "https://x.com/xPortalApp",
   discord: null,
-  logo: "img/logo-xportal.webp"
+  logo: "img/logo-xportal.webp",
+  drop: null
 }, {
   name: "Birds",
   category: "AI, Gaming",
@@ -748,7 +838,8 @@ const projects = [{
   site: "https://thebirds.ai/",
   x: "https://x.com/TheBirdsDogs",
   discord: null,
-  logo: "img/logo-birds.webp"
+  logo: "img/logo-birds.webp",
+  drop: null
 }, {
   name: "Mogul",
   category: "Others",
@@ -756,7 +847,8 @@ const projects = [{
   site: "https://mogul.moviepass.com/",
   x: "https://x.com/mogulxmoviepass",
   discord: "https://discord.com/invite/MoviePass",
-  logo: "img/logo-mogul.webp"
+  logo: "img/logo-mogul.webp",
+  drop: null
 }, {
   name: "MoviePass",
   category: "Others",
@@ -764,7 +856,8 @@ const projects = [{
   site: "https://www.moviepass.com/",
   x: "https://x.com/MoviePass",
   discord: "https://discord.com/invite/moviepass",
-  logo: "img/logo-moviepass.webp"
+  logo: "img/logo-moviepass.webp",
+  drop: null
 }, {
   name: "Metastable",
   category: "DeFi, LST",
@@ -772,7 +865,8 @@ const projects = [{
   site: "https://mstable.io/",
   x: "https://x.com/MetaStables",
   discord: null,
-  logo: "img/logo-metastable.webp"
+  logo: "img/logo-metastable.webp",
+  drop: null
 }, {
   name: "Takibi",
   category: "Infrastructure",
@@ -780,7 +874,8 @@ const projects = [{
   site: null,
   x: "https://x.com/TakibiProtocol",
   discord: null,
-  logo: "img/logo-takibi.webp"
+  logo: "img/logo-takibi.webp",
+  drop: null
 }, {
   name: "Mitsui Protocol",
   category: "DeFi",
@@ -788,7 +883,8 @@ const projects = [{
   site: "https://www.mitsuiprotocol.ai/",
   x: "https://x.com/MitsuiProtocol",
   discord: null,
-  logo: "img/logo-mitsuiprotocol.webp"
+  logo: "img/logo-mitsuiprotocol.webp",
+  drop: null
 }, {
   name: "Splash",
   category: "Launchpad",
@@ -796,7 +892,8 @@ const projects = [{
   site: "https://splash.xyz/",
   x: "https://x.com/splash_xyz",
   discord: null,
-  logo: "img/logo-splash.webp"
+  logo: "img/logo-splash.webp",
+  drop: null
 }, {
   name: "Patara",
   category: "Analytics",
@@ -804,7 +901,8 @@ const projects = [{
   site: "https://alpha.patara.app/",
   x: "https://x.com/PataraApp",
   discord: null,
-  logo: "img/logo-patara.webp"
+  logo: "img/logo-patara.webp",
+  drop: null
 }, {
   name: "Smithii Tools",
   category: "Infrastructure",
@@ -812,7 +910,17 @@ const projects = [{
   site: "https://tools.smithii.io/",
   x: "https://x.com/SmithiiTools",
   discord: "https://discord.com/invite/3AFfGDfmk7",
-  logo: "img/logo-smithiitools.webp"
+  logo: "img/logo-smithiitools.webp",
+  drop: null
+}, {
+  name: "Alpha4",
+  category: "Infrastructure",
+  description: "An innovative Web3 protocol that enables secure and seamless liquidity movement across blockchains without the use of bridges, wrapped tokens, or synthetic assets.",
+  site: "https://alpha4.io/",
+  x: "https://x.com/alpha4_io",
+  discord: "https://discord.com/invite/VuF5NmC9Dg",
+  logo: "img/logo-alpha4.webp",
+  drop: "Testnet"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
@@ -864,7 +972,10 @@ function generateProjectCards(projectsToRender) {
     }
     projectCard.innerHTML = `
       <div class="project__card-wrapper">
+      <div class="project__card-wrapper flex">
         <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
+        ${project.drop ? `<div class="project__card-drop">${project.drop}</div>` : ''}
+      </div>
         <div class="project__card-name">${project.name}</div>
         <div class="project__card-category">${project.category}</div>
         <div class="project__card-descr">${project.description}</div>

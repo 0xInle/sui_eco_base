@@ -712,7 +712,6 @@ body.blurred .wrapper {
   display: none;
 }
 .project__card-logo {
-  margin-bottom: 10px;
   border: 2px solid var(--accent-color);
   border-radius: 100%;
   width: 60px;
@@ -728,9 +727,28 @@ body.blurred .wrapper {
   font-weight: 900;
   text-transform: uppercase;
 }
+.project__card-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
 .project__card-category {
   margin-bottom: 10px;
   border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 4px 6px 3px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-size: 10px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.project__card-drop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid var(--alert-color);
   border-radius: 8px;
   padding: 4px 6px 3px;
   max-width: -webkit-fit-content;
