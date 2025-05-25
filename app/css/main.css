@@ -107,6 +107,8 @@
 body {
   font-family: var(--font-family, sans-serif);
   background-color: var(--bg-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 img {
@@ -416,12 +418,16 @@ body.blurred .wrapper {
   margin: 0;
   margin-bottom: 20px;
   font-size: 36px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero__text {
   margin: 0;
   margin-bottom: 20px;
   font-size: 14px;
   color: var(--subtext-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero__count {
   display: -webkit-box;
@@ -440,6 +446,8 @@ body.blurred .wrapper {
   border-radius: 8px;
   padding: 15px 30px;
   background-color: var(--button-bg-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hero__count:not(:last-child) {
   margin-bottom: 20px;
@@ -581,6 +589,8 @@ body.blurred .wrapper {
   font-size: 36px;
   text-transform: uppercase;
   color: var(--text-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (width <= 833px) {
   .project__title {
