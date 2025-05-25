@@ -191,7 +191,7 @@ const projects = [{
   logo: "img/logo-haedal.webp"
 }, {
   name: "Scallop",
-  category: "DeFi",
+  category: "DeFi, Lending",
   description: "Lending and borrowing protocol with advanced security and tools.",
   site: "https://scallop.io/",
   x: "https://x.com/Scallop_io",
@@ -996,23 +996,23 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// // Сортировка карточек при нажатии на кнопку
+// Сортировка карточек при нажатии на кнопку
 const filterButtons = document.querySelectorAll('.project__btn');
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const category = button.textContent.trim().toLowerCase();
-
-    // Удаляем активный класс со всех кнопок
     filterButtons.forEach(btn => btn.classList.remove('active'));
-
-    // Добавляем активный класс на текущую кнопку
     button.classList.add('active');
+    let filteredProjects;
     if (category === 'all projects') {
-      generateProjectCards(projects);
+      filteredProjects = projects;
     } else {
-      const filteredProjects = projects.filter(p => p.category.toLowerCase() === category);
-      generateProjectCards(filteredProjects);
+      filteredProjects = projects.filter(p => {
+        const categories = p.category.toLowerCase().split(',').map(c => c.trim());
+        return categories.includes(category);
+      });
     }
+    generateProjectCards(filteredProjects);
     searchInput.value = '';
     searchInput.classList.remove('input--invalid');
     headerError.style.opacity = '0';
