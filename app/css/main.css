@@ -606,7 +606,7 @@ body.blurred .wrapper {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 20px;
+  gap: 14px;
 }
 @media (width <= 661px) {
   .project__list {

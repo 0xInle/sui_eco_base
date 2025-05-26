@@ -382,6 +382,78 @@ const projects = [{
   logo: "img/logo-desuilabs.webp",
   drop: null
 }, {
+  name: "Doonies",
+  category: "NFT",
+  description: "A collection of 4,444 skate-punk–themed PFP NFTs. Grants access to a community clubhouse, events, merch, and digital hangouts.",
+  site: "https://doonies.xyz/",
+  x: "https://x.com/LosDoonies",
+  discord: "https://discord.com/invite/doonies",
+  logo: "img/logo-doonies.webp",
+  drop: null
+}, {
+  name: "Prime Machin",
+  category: "NFT",
+  description: "A collection of 3,333 4K manga-style robots. Each NFT can own other digital assets and has a unique name via the Sui Name Service.",
+  site: "https://prime.nozomi.world/",
+  x: "https://x.com/LosDoonies",
+  discord: "https://discord.com/invite/studiomirai",
+  logo: "img/logo-primemachin.webp",
+  drop: null
+}, {
+  name: "Mystic Yetis",
+  category: "NFT",
+  description: "A unique collection of handcrafted yeti characters, each radiating wisdom and mystery. These NFTs grant access to a growing ecosystem of community, collaborations, and experiences.",
+  site: "https://lofitheyeti.com/",
+  x: "https://x.com/lofitheyeti",
+  discord: null,
+  logo: "img/logo-mysticyetis.webp",
+  drop: null
+}, {
+  name: "Tallys",
+  category: "NFT",
+  description: "A collection of 5,555 unique digital characters, each with individual traits, granting access to the community and ecosystem governance.",
+  site: "https://tallys.talus.network/",
+  x: "https://x.com/TallysNFT",
+  discord: "https://discord.com/invite/talusnetwork",
+  logo: "img/logo-tallys.webp",
+  drop: null
+}, {
+  name: "Rootlets",
+  category: "NFT",
+  description: "A collection of steampunk-inspired digital characters, each with unique designs and charisma.",
+  site: "https://rootlets.io/",
+  x: "https://x.com/rootlets_nft",
+  discord: null,
+  logo: "img/logo-rootlets.webp",
+  drop: null
+}, {
+  name: "Puggies",
+  category: "NFT",
+  description: "A collection of digital pugs with unique traits and charisma. Each NFT grants access to the community and participation in ecosystem governance.",
+  site: "https://pugwifsui.com/",
+  x: "https://x.com/SuiPugwif",
+  discord: "https://discord.com/invite/puggies",
+  logo: "img/logo-puggies.webp",
+  drop: null
+}, {
+  name: "Kumo",
+  category: "NFT",
+  description: "A collection of 2,222 customizable digital avatars featuring a cloud-cat character. Each NFT grants access to an ecosystem with games, merchandise, and upcoming airdrops.",
+  site: "https://lucky-kat.com/",
+  x: "https://x.com/Kumo_TheKat",
+  discord: "https://discord.com/invite/quyJk6vjau",
+  logo: "img/logo-kumo.webp",
+  drop: null
+}, {
+  name: "Theers",
+  category: "NFT",
+  description: "A collection of 9,998 unique digital avatars, each forming a complete artwork when paired. The project offers access to exclusive events, private lounges, and premium services.",
+  site: "https://www.theers.org/",
+  x: "https://x.com/theers_nft",
+  discord: "https://discord.com/invite/DwXtyHtxNr",
+  logo: "img/logo-theers.webp",
+  drop: "Soon"
+}, {
   name: "Stratton Labs",
   category: "Gaming",
   description: "A studio specializing in the development of games that combine DeFi and GameFi.",
@@ -914,7 +986,7 @@ const projects = [{
   drop: null
 }, {
   name: "Alpha4",
-  category: "Infrastructure",
+  category: "DeFi, Infrastructure",
   description: "An innovative Web3 protocol that enables secure and seamless liquidity movement across blockchains without the use of bridges, wrapped tokens, or synthetic assets.",
   site: "https://alpha4.io/",
   x: "https://x.com/alpha4_io",
