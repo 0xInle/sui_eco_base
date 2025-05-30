@@ -29,7 +29,11 @@ const projects = [{
   x: "https://x.com/HopAggregator",
   discord: null,
   logo: "img/logo-hop.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "FanTV",
   category: "SocialFi",
@@ -38,7 +42,11 @@ const projects = [{
   x: "https://x.com/FanTV_official",
   discord: "https://discord.com/invite/U45TV7prJe",
   logo: "img/logo-fantv.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Tusky",
   category: "Storage",
@@ -47,7 +55,11 @@ const projects = [{
   x: "https://x.com/TuskyTools",
   discord: "https://discord.com/invite/Vsjpghdhb3",
   logo: "img/logo-tusky.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Bread Walrus",
   category: "DeFi, LST",
@@ -56,7 +68,11 @@ const projects = [{
   x: "https://x.com/BreadWalrusLST",
   discord: null,
   logo: "img/logo-breadwalrus.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Winter Walrus",
   category: "DeFi, LST",
@@ -65,7 +81,11 @@ const projects = [{
   x: "https://x.com/WalrusLST",
   discord: null,
   logo: "img/logo-winterwalrus.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Steamm",
   category: "DeFi",
@@ -74,7 +94,11 @@ const projects = [{
   x: "https://x.com/steammfi",
   discord: null,
   logo: "img/logo-steamm.webp",
-  drop: "Points"
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Volo",
   category: "DeFi, LST",
@@ -83,7 +107,11 @@ const projects = [{
   x: "https://x.com/volo_sui",
   discord: "https://discord.com/invite/volo-1074826764645314621",
   logo: "img/logo-volo.webp",
-  drop: "Points"
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "SpringSui",
   category: "DeFi, LST",
@@ -92,7 +120,11 @@ const projects = [{
   x: "https://x.com/springsui_",
   discord: null,
   logo: "img/logo-springsui.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Magma Finance",
   category: "DeFi, Aggregator",
@@ -101,7 +133,11 @@ const projects = [{
   x: "https://x.com/Magma_Finance",
   discord: "https://discord.com/invite/EZ7MFfn7DJ",
   logo: "img/logo-magmafinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "DeepBook",
   category: "DeFi",
@@ -110,7 +146,11 @@ const projects = [{
   x: "https://x.com/DeepBookonSui",
   discord: "https://discord.com/invite/deepbook",
   logo: "img/logo-deepbook.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "WinX",
   category: "GambleFi",
@@ -119,7 +159,11 @@ const projects = [{
   x: "https://x.com/WinX_io",
   discord: "https://discord.com/invite/t6MJFKn633",
   logo: "img/logo-winx.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Sudo Finance",
   category: "DeFi, Perpetual",
@@ -128,7 +172,11 @@ const projects = [{
   x: "https://x.com/sudofinance",
   discord: "https://discord.com/invite/6HYG9S2UyC",
   logo: "img/logo-sudofinance.webp",
-  drop: "Points"
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Suilend",
   category: "DeFi, Lending",
@@ -137,7 +185,11 @@ const projects = [{
   x: "https://x.com/suilendprotocol",
   discord: "https://discord.com/invite/suilend",
   logo: "img/logo-suilend.webp",
-  drop: "Drop"
+  drop: "Drop",
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Walrus",
   category: "Storage",
@@ -146,7 +198,11 @@ const projects = [{
   x: "https://x.com/WalrusProtocol",
   discord: "https://discord.com/invite/walrusprotocol",
   logo: "img/logo-walrus.webp",
-  drop: "Drop"
+  drop: "Drop",
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Aftermath Finance",
   category: "DeFi, LST, Aggregator",
@@ -155,7 +211,11 @@ const projects = [{
   x: "https://x.com/AftermathFi/",
   discord: "https://discord.com/invite/KvVCAauXk5",
   logo: "img/logo-aftermathfinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Turbos Finance",
   category: "DeFi, Launchpad",
@@ -164,7 +224,11 @@ const projects = [{
   x: "https://x.com/Turbos_finance/",
   discord: "https://discord.com/invite/xFdDdDzA8W",
   logo: "img/logo-turbosfinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "7K Smart Trading",
   category: "DeFi, Aggregator, Launchpad",
@@ -173,7 +237,11 @@ const projects = [{
   x: "https://x.com/7k_ag_",
   discord: "https://discord.com/invite/vNhgKEawXn",
   logo: "img/logo-7k.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "AlphaFi",
   category: "DeFi, LST, Yield Aggregator",
@@ -182,7 +250,11 @@ const projects = [{
   x: "https://x.com/AlphaFiSUI",
   discord: "https://discord.com/invite/Pn6cKUSqSs",
   logo: "img/logo-alphafi.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Bluefin",
   category: "DeFi, Perpetual",
@@ -191,7 +263,11 @@ const projects = [{
   x: "https://x.com/bluefinapp",
   discord: "https://discord.com/invite/bluefinapp",
   logo: "img/logo-bluefin.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "DoubleUp",
   category: "GambleFi, Launchpad",
@@ -200,7 +276,11 @@ const projects = [{
   x: "https://x.com/doubleup_app",
   discord: "https://discord.com/invite/doubleupapp",
   logo: "img/logo-doubleup.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Haedal",
   category: "DeFi, LST",
@@ -209,7 +289,11 @@ const projects = [{
   x: "https://x.com/haedalprotocol",
   discord: "https://discord.com/invite/haedalprotocol",
   logo: "img/logo-haedal.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Scallop",
   category: "DeFi, Lending",
@@ -218,7 +302,11 @@ const projects = [{
   x: "https://x.com/Scallop_io",
   discord: "https://discord.com/invite/F7umecFArJ",
   logo: "img/logo-scallop.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Navi Protocol",
   category: "DeFi, Lending",
@@ -227,7 +315,11 @@ const projects = [{
   x: "https://x.com/navi_protocol",
   discord: "https://discord.com/invite/R6Xkbee8Xq",
   logo: "img/logo-naviprotocol.webp",
-  drop: "Points"
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "FlowX Finance",
   category: "DeFi, Aggregator",
@@ -236,7 +328,11 @@ const projects = [{
   x: "https://x.com/FlowX_finance",
   discord: "https://discord.com/invite/flowx-1075716902111936564",
   logo: "img/logo-flowxfinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Kriya",
   category: "DeFi, Aggregator",
@@ -245,7 +341,11 @@ const projects = [{
   x: "https://x.com/KriyaDEX",
   discord: "https://discord.com/invite/kriya",
   logo: "img/logo-kriya.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Bucket Protocol",
   category: "DeFi",
@@ -254,7 +354,11 @@ const projects = [{
   x: "https://x.com/bucket_protocol",
   discord: "https://discord.com/invite/nYCnNJE6Tr",
   logo: "img/logo-bucketprotocol.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Sui Name Service",
   category: "SocialFi, Infrastructure",
@@ -263,7 +367,11 @@ const projects = [{
   x: "https://x.com/suinsdapp",
   discord: "https://discord.com/invite/suins",
   logo: "img/logo-suinameservice.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Cetus",
   category: "DeFi, Aggregator, Launchpad",
@@ -272,7 +380,11 @@ const projects = [{
   x: "https://x.com/CetusProtocol",
   discord: "https://discord.com/invite/cetusprotocol",
   logo: "img/logo-cetus.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Full Sail",
   category: "DeFi",
@@ -281,7 +393,11 @@ const projects = [{
   x: "https://x.com/fullsailfi",
   discord: "https://discord.com/invite/fullsailfi",
   logo: "img/logo-fullsail.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Soundness",
   category: "Infrastructure",
@@ -290,7 +406,11 @@ const projects = [{
   x: "https://x.com/SoundnessLabs",
   discord: "https://discord.com/invite/E7YeREX6aU",
   logo: "img/logo-soundness.webp",
-  drop: "Testnet"
+  drop: null,
+  testnet: "Testnet",
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Sui Bridge",
   category: "Bridge",
@@ -299,7 +419,11 @@ const projects = [{
   x: "https://x.com/SuiNetwork",
   discord: "https://discord.com/invite/sui",
   logo: "img/logo-sui.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Cosmocadia",
   category: "Gaming",
@@ -308,7 +432,11 @@ const projects = [{
   x: "https://x.com/Cosmocadia",
   discord: "https://discord.com/invite/cosmocadia",
   logo: "img/logo-сosmocadia.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "TradePort",
   category: "Nft Marketplace",
@@ -317,7 +445,11 @@ const projects = [{
   x: "https://x.com/tradeportxyz",
   discord: "https://discord.com/invite/vna9xzdDK4",
   logo: "img/logo-tradeport.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Slush Wallet",
   category: "Wallet",
@@ -326,7 +458,11 @@ const projects = [{
   x: "https://x.com/SlushWallet",
   discord: "https://discord.com/invite/sui",
   logo: "img/logo-slushwallet.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Anima",
   category: "Gaming",
@@ -335,7 +471,11 @@ const projects = [{
   x: "https://x.com/animalabs_io",
   discord: "https://discord.com/invite/7AuvnpqZQe",
   logo: "img/logo-anima.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Artfi",
   category: "RWA",
@@ -344,7 +484,11 @@ const projects = [{
   x: "https://x.com/artfiglobal",
   discord: "https://discord.gg/artfi-997391352369254512",
   logo: "img/logo-artfi.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Arttoo",
   category: "RWA",
@@ -353,7 +497,11 @@ const projects = [{
   x: "https://x.com/arttoo_official",
   discord: null,
   logo: "img/logo-arttoo.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "BlueMove",
   category: "Nft Marketplace",
@@ -362,7 +510,11 @@ const projects = [{
   x: "https://x.com/BlueMove_OA",
   discord: "https://discord.com/invite/7eXkAnyeCV",
   logo: "img/logo-bluemove.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Chirp",
   category: "DePin",
@@ -371,7 +523,11 @@ const projects = [{
   x: "https://x.com/ChirpDeWi",
   discord: "hhttps://discord.com/invite/zxAaVQgFvs",
   logo: "img/logo-chirp.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "DeSuiLabs",
   category: "Gaming",
@@ -380,7 +536,11 @@ const projects = [{
   x: "https://x.com/DeSuiLabs",
   discord: "https://discord.com/invite/2Cfm9gpTCu",
   logo: "img/logo-desuilabs.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Doonies",
   category: "NFT",
@@ -389,7 +549,11 @@ const projects = [{
   x: "https://x.com/LosDoonies",
   discord: "https://discord.com/invite/doonies",
   logo: "img/logo-doonies.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Prime Machin",
   category: "NFT",
@@ -398,7 +562,11 @@ const projects = [{
   x: "https://x.com/LosDoonies",
   discord: "https://discord.com/invite/studiomirai",
   logo: "img/logo-primemachin.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Mystic Yetis",
   category: "NFT",
@@ -407,7 +575,11 @@ const projects = [{
   x: "https://x.com/lofitheyeti",
   discord: null,
   logo: "img/logo-mysticyetis.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Tallys",
   category: "NFT",
@@ -416,7 +588,11 @@ const projects = [{
   x: "https://x.com/TallysNFT",
   discord: "https://discord.com/invite/talusnetwork",
   logo: "img/logo-tallys.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Rootlets",
   category: "NFT",
@@ -425,7 +601,11 @@ const projects = [{
   x: "https://x.com/rootlets_nft",
   discord: null,
   logo: "img/logo-rootlets.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Puggies",
   category: "NFT",
@@ -434,7 +614,11 @@ const projects = [{
   x: "https://x.com/SuiPugwif",
   discord: "https://discord.com/invite/puggies",
   logo: "img/logo-puggies.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Kumo",
   category: "NFT",
@@ -443,7 +627,11 @@ const projects = [{
   x: "https://x.com/Kumo_TheKat",
   discord: "https://discord.com/invite/quyJk6vjau",
   logo: "img/logo-kumo.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Theers",
   category: "NFT",
@@ -452,7 +640,11 @@ const projects = [{
   x: "https://x.com/theers_nft",
   discord: "https://discord.com/invite/DwXtyHtxNr",
   logo: "img/logo-theers.webp",
-  drop: "Soon"
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: "Soon",
+  date: "2024-04-01"
 }, {
   name: "Stratton Labs",
   category: "Gaming",
@@ -461,7 +653,11 @@ const projects = [{
   x: "https://x.com/Strattonweb3",
   discord: null,
   logo: "img/logo-strattonlabs.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "ONE Fight Arena",
   category: "Gaming",
@@ -470,7 +666,11 @@ const projects = [{
   x: "https://x.com/onefightarena",
   discord: "https://discord.com/invite/Unr2CECBJc",
   logo: "img/logo-onefightarena.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Fewcha Wallet",
   category: "Wallet",
@@ -479,7 +679,11 @@ const projects = [{
   x: "https://x.com/fewchawallet",
   discord: null,
   logo: "img/logo-fewchawallet.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Ika",
   category: "Infrastructure",
@@ -488,7 +692,11 @@ const projects = [{
   x: "https://x.com/ikadotxyz",
   discord: "https://discord.com/invite/ikadotxyz",
   logo: "img/logo-ika.webp",
-  drop: "Drop"
+  drop: "Drop",
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Karrier One",
   category: "Infrastructure",
@@ -497,7 +705,11 @@ const projects = [{
   x: "https://x.com/karrier_one",
   discord: "https://discord.com/invite/karrierone",
   logo: "img/logo-karrierone.webp",
-  drop: "Drop"
+  drop: "Drop",
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "MovePump",
   category: "Launchpad",
@@ -506,7 +718,11 @@ const projects = [{
   x: "https://x.com/BlueMove_OA",
   discord: "https://discord.com/invite/7eXkAnyeCV",
   logo: "img/logo-movepump.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Nightly Wallet",
   category: "Wallet",
@@ -515,7 +731,11 @@ const projects = [{
   x: "https://x.com/Nightly_app",
   discord: "https://discord.com/invite/7nhFHA6yZq",
   logo: "img/logo-nightlywallet.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Polymedia",
   category: "Infrastructure",
@@ -524,7 +744,11 @@ const projects = [{
   x: "https://x.com/polymedia_app",
   discord: null,
   logo: "img/logo-polymedia.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Shadow",
   category: "Nft Marketplace",
@@ -533,7 +757,11 @@ const projects = [{
   x: "https://x.com/shadow_sui",
   discord: null,
   logo: "img/logo-shadow.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Shadow Wallet",
   category: "Wallet",
@@ -542,7 +770,11 @@ const projects = [{
   x: "https://x.com/shadow_sui",
   discord: null,
   logo: "img/logo-shadow.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Spritz Finance",
   category: "Payments",
@@ -551,7 +783,11 @@ const projects = [{
   x: "https://x.com/spritzfinance",
   discord: null,
   logo: "img/logo-spritzfinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Studio Mirai",
   category: "Infrastructure",
@@ -560,7 +796,11 @@ const projects = [{
   x: "https://x.com/_StudioMirai",
   discord: "https://discord.com/invite/studiomirai",
   logo: "img/logo-studiomirai.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "Suiet",
   category: "Wallet",
@@ -569,7 +809,11 @@ const projects = [{
   x: "https://x.com/suiet_wallet",
   discord: "https://discord.com/invite/XQspMzXNXu",
   logo: "img/logo-suiet.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-01"
 }, {
   name: "SuiPlay",
   category: "Others",
@@ -578,7 +822,11 @@ const projects = [{
   x: "https://x.com/SuiPlay",
   discord: "https://discord.com/invite/suiplay",
   logo: "img/logo-suiplay.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-02"
 }, {
   name: "Suiscan",
   category: "Analytics",
@@ -587,7 +835,11 @@ const projects = [{
   x: "https://x.com/suiscanofficial",
   discord: "https://discord.com/invite/UBQ85uSyAU",
   logo: "img/logo-suiscan.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-03"
 }, {
   name: "SuiVision",
   category: "Analytics",
@@ -596,7 +848,11 @@ const projects = [{
   x: "https://x.com/blockvisionhq",
   discord: "https://discord.com/invite/blockvision",
   logo: "img/logo-suivision.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-04"
 }, {
   name: "Surf Wallet",
   category: "Wallet",
@@ -605,7 +861,11 @@ const projects = [{
   x: "https://x.com/surf_wallet",
   discord: null,
   logo: "img/logo-surfwallet.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-05"
 }, {
   name: "Typus Finance",
   category: "DeFi",
@@ -614,7 +874,11 @@ const projects = [{
   x: "https://x.com/TypusFinance",
   discord: "https://discord.com/invite/pzETKp6zvr",
   logo: "img/logo-typusfinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-06"
 }, {
   name: "Recrd",
   category: "SocialFi",
@@ -623,7 +887,11 @@ const projects = [{
   x: "https://x.com/RECRDapp",
   discord: null,
   logo: "img/logo-recrd.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-07"
 }, {
   name: "Momentum",
   category: "DeFi",
@@ -632,7 +900,11 @@ const projects = [{
   x: "https://x.com/MMTFinance",
   discord: "https://discord.com/invite/mmtfinance",
   logo: "img/logo-momentum.webp",
-  drop: "Points"
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-08"
 }, {
   name: "Pebble",
   category: "GambleFi",
@@ -641,7 +913,11 @@ const projects = [{
   x: "https://x.com/PebblePlay",
   discord: null,
   logo: "img/logo-pebble.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-09"
 }, {
   name: "Astros",
   category: "DeFi, Aggregator",
@@ -650,7 +926,11 @@ const projects = [{
   x: "https://x.com/astros_ag",
   discord: "https://discord.com/invite/R6Xkbee8Xq",
   logo: "img/logo-astros.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-10"
 }, {
   name: "Wave",
   category: "DeFi, GameFi",
@@ -659,7 +939,11 @@ const projects = [{
   x: "https://x.com/WaveOnSui",
   discord: "https://discord.com/invite/waveonsui",
   logo: "img/logo-wave.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-11"
 }, {
   name: "Obric",
   category: "DeFi",
@@ -668,7 +952,11 @@ const projects = [{
   x: "https://x.com/poor_obric",
   discord: null,
   logo: "img/logo-obric.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-12"
 }, {
   name: "Sui Passport",
   category: "Others",
@@ -677,7 +965,11 @@ const projects = [{
   x: "https://x.com/SuiFamOfficial",
   discord: null,
   logo: "img/logo-suipassport.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-13"
 }, {
   name: "Talentum",
   category: "SocialFi",
@@ -686,7 +978,11 @@ const projects = [{
   x: "https://x.com/TalentumID",
   discord: "https://discord.com/invite/GG3Q4CEv29",
   logo: "img/logo-talentum.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-14"
 }, {
   name: "RaidenX",
   category: "DeFi",
@@ -695,7 +991,11 @@ const projects = [{
   x: "https://x.com/raidenx_io",
   discord: null,
   logo: "img/logo-raidenx.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-15"
 }, {
   name: "Suiswap",
   category: "DeFi",
@@ -704,7 +1004,11 @@ const projects = [{
   x: "https://x.com/suiswap_app",
   discord: "https://discord.com/invite/suiswap",
   logo: "img/logo-suiswap.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-16"
 }, {
   name: "Shio",
   category: "Infrastructure",
@@ -713,7 +1017,11 @@ const projects = [{
   x: "https://x.com/ShioLabs",
   discord: null,
   logo: "img/logo-shio.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-17"
 }, {
   name: "Kai Finance",
   category: "DeFi, Yield Aggregator",
@@ -722,7 +1030,11 @@ const projects = [{
   x: "https://x.com/kai_finance_sui",
   discord: "https://discord.com/invite/XV2xYZjReX",
   logo: "img/logo-kaifinance.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-18"
 }, {
   name: "Rockee",
   category: "DeFi",
@@ -731,7 +1043,11 @@ const projects = [{
   x: "https://x.com/rockeeAI",
   discord: null,
   logo: "img/logo-rockee.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-19"
 }, {
   name: "ZO",
   category: "DeFi, Perpetual",
@@ -740,7 +1056,11 @@ const projects = [{
   x: "https://x.com/zofaiperps",
   discord: "https://discord.com/invite/RRfXR9VTfd",
   logo: "img/logo-zo.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-20"
 }, {
   name: "Mole",
   category: "DeFi",
@@ -749,7 +1069,11 @@ const projects = [{
   x: "https://x.com/moledefi",
   discord: "https://discord.com/invite/JfgJzJ8kkK",
   logo: "img/logo-mole.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-21"
 }, {
   name: "Vram.Ai",
   category: "AI",
@@ -758,7 +1082,11 @@ const projects = [{
   x: "https://x.com/vramxai",
   discord: "https://discord.com/invite/G3rvmPmztp",
   logo: "img/logo-vramai.webp",
-  drop: "Drop"
+  drop: "Drop",
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-22"
 }, {
   name: "Lotus Finance",
   category: "DeFi",
@@ -767,34 +1095,11 @@ const projects = [{
   x: "https://x.com/Lotusfinance_io",
   discord: "https://discord.com/invite/lotusfinance",
   logo: "img/logo-lotus.webp",
-  drop: null
-}, {
-  name: "Cro.Ag",
-  category: "DeFi, Aggregator",
-  description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup.",
-  site: "https://cro.ag/",
-  x: "https://x.com/cro_aggregator",
-  discord: "https://discord.com/invite/UG6c7nXr5X",
-  logo: "img/logo-croag.webp",
-  drop: "Points"
-}, {
-  name: "Noodles Finance",
-  category: "DeFi, Analytics",
-  description: "A multifunctional DeFi protocol combining trading, analytics, and social features.",
-  site: "https://noodles.fi/",
-  x: "https://x.com/NoodlesFi",
-  discord: null,
-  logo: "img/logo-noodlesfinance.webp",
-  drop: null
-}, {
-  name: "GiveRep",
-  category: "SocialFi",
-  description: "A SocialFi platform that rewards your activity on X.",
-  site: "https://giverep.com/",
-  x: "https://x.com/GiveRep",
-  discord: null,
-  logo: "img/logo-giverep.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-23"
 }, {
   name: "Suigar",
   category: "GambleFi",
@@ -803,7 +1108,11 @@ const projects = [{
   x: "https://x.com/Suigar_com",
   discord: "https://discord.com/invite/tAYGd46ZUK",
   logo: "img/logo-suigar.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-24"
 }, {
   name: "Hokko",
   category: "Nft Marketplace",
@@ -812,7 +1121,11 @@ const projects = [{
   x: "https://x.com/hokko_io",
   discord: null,
   logo: "img/logo-hokko.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-25"
 }, {
   name: "Bolt Liquidity",
   category: "Infrastructure",
@@ -821,7 +1134,11 @@ const projects = [{
   x: "https://x.com/BoltLiquidity",
   discord: null,
   logo: "img/logo-boltliquidity.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-26"
 }, {
   name: "Tugboat.Fi",
   category: "DeFi",
@@ -830,7 +1147,11 @@ const projects = [{
   x: "https://x.com/tugboatdotfi",
   discord: null,
   logo: "img/logo-tugboatfi.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-27"
 }, {
   name: "Pawtato Finance",
   category: "Analytics",
@@ -839,16 +1160,11 @@ const projects = [{
   x: "https://x.com/PawtatoFinance",
   discord: "https://discord.com/invite/fNEAnHD4RV",
   logo: "img/logo-pawtatofinance.webp",
-  drop: "Points"
-}, {
-  name: "Moonbags",
-  category: "Launchpad",
-  description: "A platform for launching tokens without code, offering staking rewards and fee-based incentives.",
-  site: "https://moonbags.io/",
-  x: "https://x.com/moonbags_io",
-  discord: null,
-  logo: "img/logo-moonbags.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-04-28"
 }, {
   name: "SuiBets",
   category: "GambleFi",
@@ -857,7 +1173,11 @@ const projects = [{
   x: "https://x.com/Sui_Bets/",
   discord: null,
   logo: "img/logo-suibets.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-29"
 }, {
   name: "CoinDrip",
   category: "Others",
@@ -866,7 +1186,11 @@ const projects = [{
   x: "https://x.com/CoinDripHQ",
   discord: null,
   logo: "img/logo-coindrip.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-04-30"
 }, {
   name: "Atoma",
   category: "AI",
@@ -875,25 +1199,11 @@ const projects = [{
   x: "https://x.com/Atoma_Network",
   discord: "https://discord.com/invite/atoma",
   logo: "img/logo-atoma.webp",
-  drop: null
-}, {
-  name: "Deeptrade",
-  category: "DeFi",
-  description: "Decentralized orderbook exchange with zero fees for token holders, swap aggregation, and market analytics.",
-  site: "https://deeptrade.io/",
-  x: "https://x.com/_deeptrade",
-  discord: null,
-  logo: "img/logo-deeptrade.webp",
-  drop: null
-}, {
-  name: "PinataBot",
-  category: "Others",
-  description: "Decentralized OTC for pre-launch token trading, secured by deposits.",
-  site: "https://market.pinatabot.com/",
-  x: "https://x.com/PinataBotOnSui",
-  discord: null,
-  logo: "img/logo-pinatabot.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-01"
 }, {
   name: "xPortal",
   category: "Wallet",
@@ -902,7 +1212,11 @@ const projects = [{
   x: "https://x.com/xPortalApp",
   discord: null,
   logo: "img/logo-xportal.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-02"
 }, {
   name: "Birds",
   category: "AI, Gaming",
@@ -911,7 +1225,11 @@ const projects = [{
   x: "https://x.com/TheBirdsDogs",
   discord: null,
   logo: "img/logo-birds.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-03"
 }, {
   name: "Mogul",
   category: "Others",
@@ -920,7 +1238,11 @@ const projects = [{
   x: "https://x.com/mogulxmoviepass",
   discord: "https://discord.com/invite/MoviePass",
   logo: "img/logo-mogul.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-04"
 }, {
   name: "MoviePass",
   category: "Others",
@@ -929,7 +1251,11 @@ const projects = [{
   x: "https://x.com/MoviePass",
   discord: "https://discord.com/invite/moviepass",
   logo: "img/logo-moviepass.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-05"
 }, {
   name: "Metastable",
   category: "DeFi, LST",
@@ -938,7 +1264,11 @@ const projects = [{
   x: "https://x.com/MetaStables",
   discord: null,
   logo: "img/logo-metastable.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-06"
 }, {
   name: "Takibi",
   category: "Infrastructure",
@@ -947,7 +1277,89 @@ const projects = [{
   x: "https://x.com/TakibiProtocol",
   discord: null,
   logo: "img/logo-takibi.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-07"
+}, {
+  name: "Cro.Ag",
+  category: "DeFi, Aggregator",
+  description: "A full-featured DeFi solution offering swap and lending aggregation, wallet cleanup.",
+  site: "https://cro.ag/",
+  x: "https://x.com/cro_aggregator",
+  discord: "https://discord.com/invite/UG6c7nXr5X",
+  logo: "img/logo-croag.webp",
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-05-08"
+}, {
+  name: "Noodles Finance",
+  category: "DeFi, Analytics",
+  description: "A multifunctional DeFi protocol combining trading, analytics, and social features.",
+  site: "https://noodles.fi/",
+  x: "https://x.com/NoodlesFi",
+  discord: null,
+  logo: "img/logo-noodlesfinance.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-08"
+}, {
+  name: "GiveRep",
+  category: "SocialFi",
+  description: "A SocialFi platform that rewards your activity on X.",
+  site: "https://giverep.com/",
+  x: "https://x.com/GiveRep",
+  discord: null,
+  logo: "img/logo-giverep.webp",
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-05-10"
+}, {
+  name: "Moonbags",
+  category: "Launchpad",
+  description: "A platform for launching tokens without code, offering staking rewards and fee-based incentives.",
+  site: "https://moonbags.io/",
+  x: "https://x.com/moonbags_io",
+  discord: null,
+  logo: "img/logo-moonbags.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-12"
+}, {
+  name: "Deeptrade",
+  category: "DeFi",
+  description: "Decentralized orderbook exchange with zero fees for token holders, swap aggregation, and market analytics.",
+  site: "https://deeptrade.io/",
+  x: "https://x.com/_deeptrade",
+  discord: null,
+  logo: "img/logo-deeptrade.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-13"
+}, {
+  name: "PinataBot",
+  category: "Others",
+  description: "Decentralized OTC for pre-launch token trading, secured by deposits.",
+  site: "https://market.pinatabot.com/",
+  x: "https://x.com/PinataBotOnSui",
+  discord: null,
+  logo: "img/logo-pinatabot.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-14"
 }, {
   name: "Mitsui Protocol",
   category: "DeFi",
@@ -956,7 +1368,11 @@ const projects = [{
   x: "https://x.com/MitsuiProtocol",
   discord: null,
   logo: "img/logo-mitsuiprotocol.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-19"
 }, {
   name: "Splash",
   category: "Launchpad",
@@ -965,7 +1381,11 @@ const projects = [{
   x: "https://x.com/splash_xyz",
   discord: null,
   logo: "img/logo-splash.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-20"
 }, {
   name: "Patara",
   category: "Analytics",
@@ -974,7 +1394,11 @@ const projects = [{
   x: "https://x.com/PataraApp",
   discord: null,
   logo: "img/logo-patara.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-21"
 }, {
   name: "Smithii Tools",
   category: "Infrastructure",
@@ -983,7 +1407,11 @@ const projects = [{
   x: "https://x.com/SmithiiTools",
   discord: "https://discord.com/invite/3AFfGDfmk7",
   logo: "img/logo-smithiitools.webp",
-  drop: null
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-05-24"
 }, {
   name: "Alpha4",
   category: "DeFi, Infrastructure",
@@ -992,8 +1420,27 @@ const projects = [{
   x: "https://x.com/alpha4_io",
   discord: "https://discord.com/invite/VuF5NmC9Dg",
   logo: "img/logo-alpha4.webp",
-  drop: "Testnet"
+  drop: null,
+  testnet: "Testnet",
+  points: null,
+  soon: null,
+  date: "2024-05-24"
+}, {
+  name: "Ganbitera",
+  category: "Launchpad, Nft Marketplace, AI",
+  description: "An AI-powered NFT launchpad and marketplace. The platform enables no-code NFT creation and provides smart trading and analysis tools.",
+  site: "https://ganbitera.io/",
+  x: "https://x.com/ganbitera",
+  discord: null,
+  logo: "img/logo-ganbitera.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: "Soon",
+  date: new Date().toISOString().split('T')[0]
 }];
+
+// new Date().toISOString().split('T')[0]
 
 // Функция перемещения к последнему добавленному проекту на сайт
 const lastProject = projects[projects.length - 1];
@@ -1034,7 +1481,6 @@ function generateProjectCards(projectsToRender) {
   const projectsList = document.querySelector('.project__card-list');
   const showMoreBtn = document.querySelector('.project__card-btn');
   projectsList.innerHTML = '';
-  projectsToRender.sort((a, b) => a.name.localeCompare(b.name));
   projectsToRender.forEach((project, index) => {
     const projectCard = document.createElement('li');
     projectCard.classList.add('project__card-item');
@@ -1047,6 +1493,9 @@ function generateProjectCards(projectsToRender) {
       <div class="project__card-wrapper flex">
         <div class="project__card-logo" style="background-image: url('${project.logo}');"></div>
         ${project.drop ? `<div class="project__card-drop">${project.drop}</div>` : ''}
+        ${project.testnet ? `<div class="project__card-drop">${project.testnet}</div>` : ''}
+        ${project.points ? `<div class="project__card-drop">${project.points}</div>` : ''}
+        ${project.soon ? `<div class="project__card-drop">${project.soon}</div>` : ''}
       </div>
         <div class="project__card-name">${project.name}</div>
         <div class="project__card-category">${project.category}</div>
@@ -1090,7 +1539,87 @@ function generateProjectCards(projectsToRender) {
     showMoreBtn.style.display = 'none';
   }
 }
-generateProjectCards(projects);
+let filteredProjects = [...projects].sort((a, b) => a.name.localeCompare(b.name));
+generateProjectCards(filteredProjects);
+
+// Фильтрация карточек по категориям
+const filterButtons = document.querySelectorAll('.project__btn');
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.textContent.trim().toLowerCase();
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    if (category === 'all projects') {
+      filteredProjects = [...projects];
+    } else {
+      filteredProjects = projects.filter(p => {
+        const categories = p.category.toLowerCase().split(',').map(c => c.trim());
+        return categories.includes(category);
+      });
+    }
+    filteredProjects.sort((a, b) => a.name.localeCompare(b.name));
+    generateProjectCards(filteredProjects);
+    searchInput.value = '';
+    searchInput.classList.remove('input--invalid');
+    headerError.style.opacity = '0';
+    const cards = document.querySelectorAll('.project__card-item');
+    cards.forEach((card, index) => {
+      card.classList.toggle('hidden', index >= 12);
+    });
+    if (cards.length > 12 && showMoreBtn) {
+      showMoreBtn.style.display = 'block';
+    } else if (showMoreBtn) {
+      showMoreBtn.style.display = 'none';
+    }
+  });
+});
+
+// Сортировка карточек
+const sortButtons = document.querySelectorAll('.project__sort-btn');
+let lastOneTimeSort = null;
+sortButtons.forEach(button => {
+  button.isAsc = false;
+  const sortType = button.dataset.sort;
+  button.addEventListener('click', () => {
+    if (sortType === 'name') {
+      if (lastOneTimeSort) return;
+      filteredProjects.sort((a, b) => {
+        const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        if (nameA < nameB) return button.isAsc ? -1 : 1;
+        if (nameA > nameB) return button.isAsc ? 1 : -1;
+        return 0;
+      });
+      button.isAsc = !button.isAsc;
+      generateProjectCards(filteredProjects);
+      lastOneTimeSort = null;
+    } else if (sortType === 'date') {
+      if (lastOneTimeSort) return;
+      filteredProjects.sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return button.isAsc ? dateA - dateB : dateB - dateA;
+      });
+      button.isAsc = !button.isAsc;
+      generateProjectCards(filteredProjects);
+      lastOneTimeSort = null;
+    } else if (['drop', 'points', 'testnet', 'soon'].includes(sortType)) {
+      if (lastOneTimeSort === sortType) return;
+      filterButtons.forEach(item => item.classList.remove('active'));
+      filteredProjects = projects.filter(p => p[sortType]);
+      filteredProjects.sort((a, b) => {
+        return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+      });
+      generateProjectCards(filteredProjects);
+      lastOneTimeSort = sortType;
+    }
+  });
+  if (['drop', 'points', 'testnet', 'soon'].includes(sortType)) {
+    button.addEventListener('blur', () => {
+      lastOneTimeSort = null;
+    });
+  }
+});
 
 // Функция для отображения скрытых карточек
 document.querySelector('.project__card-btn').addEventListener('click', function () {
@@ -1179,44 +1708,13 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// Сортировка карточек при нажатии на кнопку
-const filterButtons = document.querySelectorAll('.project__btn');
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.textContent.trim().toLowerCase();
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    let filteredProjects;
-    if (category === 'all projects') {
-      filteredProjects = projects;
-    } else {
-      filteredProjects = projects.filter(p => {
-        const categories = p.category.toLowerCase().split(',').map(c => c.trim());
-        return categories.includes(category);
-      });
-    }
-    generateProjectCards(filteredProjects);
-    searchInput.value = '';
-    searchInput.classList.remove('input--invalid');
-    headerError.style.opacity = '0';
-    const cards = document.querySelectorAll('.project__card-item');
-    cards.forEach((card, index) => {
-      card.classList.toggle('hidden', index >= 12);
-    });
-    if (cards.length > 12 && showMoreBtn) {
-      showMoreBtn.style.display = 'block';
-    } else if (showMoreBtn) {
-      showMoreBtn.style.display = 'none';
-    }
-  });
-});
-
 // Сортировка кнопок по имени
 const list = document.querySelector('.project__list');
 const items = Array.from(list.children);
 const allProjects = items.find(item => item.textContent.trim() === 'All Projects');
 const others = items.find(item => item.textContent.trim() === 'Others');
-const filteredItems = items.filter(item => item !== allProjects && item !== others);
+const selectItem = items.find(item => item.classList.contains('project__item-select'));
+const filteredItems = items.filter(item => item !== allProjects && item !== others && item !== selectItem);
 filteredItems.sort((a, b) => {
   const textA = a.textContent.trim().toLowerCase();
   const textB = b.textContent.trim().toLowerCase();
@@ -1226,6 +1724,7 @@ list.innerHTML = '';
 if (allProjects) list.appendChild(allProjects);
 filteredItems.forEach(item => list.appendChild(item));
 if (others) list.appendChild(others);
+if (selectItem) list.appendChild(selectItem);
 
 // Поиск по карточкам
 const searchInput = document.querySelector('.header__search');
@@ -1244,9 +1743,20 @@ searchInput.addEventListener('input', () => {
     headerError.style.opacity = "0";
   }
   const query = value.toLowerCase();
+  function resetSortStates() {
+    sortButtons.forEach(button => {
+      button.isAsc = false;
+    });
+    lastOneTimeSort = null;
+  }
   if (query === "") {
-    generateProjectCards(projects);
     filterButtons.forEach(btn => btn.classList.remove('active'));
+    filteredProjects = [...projects].sort((a, b) => a.name.localeCompare(b.name));
+    generateProjectCards(filteredProjects);
+    resetSortStates();
+    if (showMoreBtn) {
+      showMoreBtn.style.display = filteredProjects.length > 12 ? 'block' : 'none';
+    }
     return;
   }
   const cards = document.querySelectorAll('.project__card-item');
