@@ -439,7 +439,7 @@ const projects = [{
   date: "2024-04-01"
 }, {
   name: "TradePort",
-  category: "Nft Marketplace",
+  category: "NFT Marketplace",
   description: "Multichain trading platform.",
   site: "https://www.tradeport.xyz/",
   x: "https://x.com/tradeportxyz",
@@ -504,7 +504,7 @@ const projects = [{
   date: "2024-04-01"
 }, {
   name: "BlueMove",
-  category: "Nft Marketplace",
+  category: "NFT Marketplace",
   description: "NFT platform for buying and selling digital collectibles on the blockchain.",
   site: "https://sui.bluemove.net/",
   x: "https://x.com/BlueMove_OA",
@@ -751,7 +751,7 @@ const projects = [{
   date: "2024-04-01"
 }, {
   name: "Shadow",
-  category: "Nft Marketplace",
+  category: "NFT Marketplace",
   description: "A no-code platform for creating and trading NFTs with a dynamic bonding curve model, where prices adjust based on demand.",
   site: "https://shadow.app/",
   x: "https://x.com/shadow_sui",
@@ -1058,7 +1058,7 @@ const projects = [{
   logo: "img/logo-zo.webp",
   drop: null,
   testnet: null,
-  points: null,
+  points: "Points",
   soon: null,
   date: "2024-04-20"
 }, {
@@ -1115,7 +1115,7 @@ const projects = [{
   date: "2024-04-24"
 }, {
   name: "Hokko",
-  category: "Nft Marketplace",
+  category: "NFT Marketplace",
   description: "A user-friendly marketplace for buying and selling digital collectibles.",
   site: "https://www.hokko.io/",
   x: "https://x.com/hokko_io",
@@ -1427,7 +1427,7 @@ const projects = [{
   date: "2024-05-24"
 }, {
   name: "Ganbitera",
-  category: "Launchpad, Nft Marketplace, AI",
+  category: "Launchpad, NFT Marketplace, AI",
   description: "An AI-powered NFT launchpad and marketplace. The platform enables no-code NFT creation and provides smart trading and analysis tools.",
   site: "https://ganbitera.io/",
   x: "https://x.com/ganbitera",
@@ -1437,10 +1437,60 @@ const projects = [{
   testnet: null,
   points: null,
   soon: "Soon",
-  date: new Date().toISOString().split('T')[0]
+  date: "2024-05-30"
+}, {
+  name: "Predictora",
+  category: "AI, Others",
+  description: "A Web3 prediction platform powered by AI and gamification: token price forecasting, point accumulation, and a reward system.",
+  site: "https://app.predictora.xyz/",
+  x: "https://x.com/Predictora_",
+  discord: "https://discord.com/invite/JKDvsx6X",
+  logo: "img/logo-predictora.webp",
+  drop: null,
+  testnet: "Testnet",
+  points: null,
+  soon: null,
+  date: "2024-05-31"
+}, {
+  name: "Suiverse",
+  category: "NFT Marketplace",
+  description: "A platform focused on zero-fee NFT trading and swapping. It supports escrow auctions, private NFT-to-NFT swaps, and multi-NFT-to-token exchanges.",
+  site: "https://suiverse.space/",
+  x: "https://x.com/suiverseportal",
+  discord: "https://discord.com/invite/ZAvaqSBEWs",
+  logo: "img/logo-suiverse.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-01"
+}, {
+  name: "Quants",
+  category: "NFT",
+  description: "NFT Collection of 3000 cute PFPs.",
+  site: "https://quantsnft.xyz/",
+  x: "https://x.com/quantsnftxyz?s=21",
+  discord: "https://discord.com/invite/quantsnftxyz",
+  logo: "img/logo-quants.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: "Soon",
+  date: "2024-06-02"
+}, {
+  name: "Jackson",
+  category: "GambleFi, DeFi",
+  description: "A gaming platform combining DeFi and NFTs. Offers provably fair gameplay, earning opportunities through staking, and unique digital collectibles.",
+  site: "https://www.jackson.io/",
+  x: "https://x.com/jackson_app",
+  discord: null,
+  logo: "img/logo-jackson.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-02"
 }];
-
-// new Date().toISOString().split('T')[0]
 
 // Функция перемещения к последнему добавленному проекту на сайт
 const lastProject = projects[projects.length - 1];
