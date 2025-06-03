@@ -185,7 +185,7 @@ const projects = [{
   x: "https://x.com/suilendprotocol",
   discord: "https://discord.com/invite/suilend",
   logo: "img/logo-suilend.webp",
-  drop: "Drop",
+  drop: null,
   testnet: null,
   points: null,
   soon: null,
@@ -1490,6 +1490,19 @@ const projects = [{
   points: null,
   soon: null,
   date: "2024-06-02"
+}, {
+  name: "Interest Labs",
+  category: "Infrastructure",
+  description: "Infrastructure and tools for decentralized applications, including staking, tokenization, and gamification.",
+  site: "https://www.interestlabs.io/",
+  x: "https://x.com/IPXLabs",
+  discord: "https://discord.com/invite/interestprotocol",
+  logo: "img/logo-interestlabs.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-03"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
