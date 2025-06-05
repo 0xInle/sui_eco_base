@@ -813,7 +813,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-01"
+  date: "2024-04-02"
 }, {
   name: "SuiPlay",
   category: "Others",
@@ -826,7 +826,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-02"
+  date: "2024-04-03"
 }, {
   name: "Suiscan",
   category: "Analytics",
@@ -839,7 +839,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-03"
+  date: "2024-04-04"
 }, {
   name: "SuiVision",
   category: "Analytics",
@@ -852,7 +852,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-04"
+  date: "2024-04-05"
 }, {
   name: "Surf Wallet",
   category: "Wallet",
@@ -865,7 +865,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-05"
+  date: "2024-04-06"
 }, {
   name: "Typus Finance",
   category: "DeFi",
@@ -878,7 +878,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-06"
+  date: "2024-04-07"
 }, {
   name: "Recrd",
   category: "SocialFi",
@@ -891,7 +891,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-07"
+  date: "2024-04-08"
 }, {
   name: "Momentum",
   category: "DeFi",
@@ -904,7 +904,7 @@ const projects = [{
   testnet: null,
   points: "Points",
   soon: null,
-  date: "2024-04-08"
+  date: "2024-04-09"
 }, {
   name: "Pebble",
   category: "GambleFi",
@@ -917,7 +917,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-09"
+  date: "2024-04-10"
 }, {
   name: "Astros",
   category: "DeFi, Aggregator",
@@ -930,7 +930,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-10"
+  date: "2024-04-11"
 }, {
   name: "Wave",
   category: "DeFi, GameFi",
@@ -943,7 +943,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-11"
+  date: "2024-04-12"
 }, {
   name: "Obric",
   category: "DeFi",
@@ -956,7 +956,7 @@ const projects = [{
   testnet: null,
   points: null,
   soon: null,
-  date: "2024-04-12"
+  date: "2024-04-13"
 }, {
   name: "Sui Passport",
   category: "Others",
@@ -965,19 +965,6 @@ const projects = [{
   x: "https://x.com/SuiFamOfficial",
   discord: null,
   logo: "img/logo-suipassport.webp",
-  drop: null,
-  testnet: null,
-  points: null,
-  soon: null,
-  date: "2024-04-13"
-}, {
-  name: "Talentum",
-  category: "SocialFi",
-  description: "A Web3 platform for earning through tasks, quizzes, and ambassador campaigns with automated rewards.",
-  site: "https://talentum.id/",
-  x: "https://x.com/TalentumID",
-  discord: "https://discord.com/invite/GG3Q4CEv29",
-  logo: "img/logo-talentum.webp",
   drop: null,
   testnet: null,
   points: null,
@@ -1503,6 +1490,19 @@ const projects = [{
   points: null,
   soon: null,
   date: "2024-06-03"
+}, {
+  name: "Coral Reef",
+  category: "SocialFi",
+  description: "A sub-platform focused on user engagement through quest completion, credit earning, reward redemption, and access to DeFi tools.",
+  site: "https://sui.talentum.id/",
+  x: "https://x.com/Suicoralreef",
+  discord: "https://discord.com/invite/GG3Q4CEv29",
+  logo: "img/logo-coralreef.webp",
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-06-04"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт

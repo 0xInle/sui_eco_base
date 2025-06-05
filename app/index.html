@@ -9,36 +9,44 @@
   <meta name="theme-color" content="#111111">
   <title>Sui Eco Base</title>
   <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css?v=1.0.28">
-  <script defer src="js/main.js?v=1.0.28"></script>
+  <link rel="stylesheet" href="css/main.css?v=1.0.32">
+  <script defer src="js/main.js?v=1.0.32"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="header container flex">
-  <div class="header__disclaimer">
-    Links are provided from official sources only. We are not responsible for your data or third-party actions.
-  </div>
-  <nav class="header__nav flex">
-    <a href="#" class="header__link header__link-logo link-reset" tabindex="-1">
-      Sui Eco Base
-    </a>
-    <div class="header__wrapper">
+    <header class="header container flex">
+  <nav class="header__nav">
+    <div class="header__top-content flex">
+      <a href="#" class="header__link header__link-logo link-reset" tabindex="-1">
+        Sui Eco Base
+      </a>
+      <form class="header__form" role="search" onsubmit="event.preventDefault()"">
+        <input class="header__search" type="text" name="query" placeholder="SEARCH PROJECTS">
+        <div class="header__error">Project not found</div>
+      </form>
+    </div>
+    <div class="header__bottom-content flex">
+      <button class="header__btn header__btn-wal btn-reset" disabled>
+        Walrus
+      </button>
+      <button class="header__btn header__btn-ika btn-reset" disabled>
+        Ika
+      </button>
+      <button class="header__btn header__btn-contacts btn-reset">
+        Contacts
+      </button>
       <button class="header__btn header__btn-theme btn-reset">
         <svg class="header__icon">
           <use xlink:href="img/sprite.svg#icon-sun"></use>
         </svg>
       </button>
-      <div class="header__container">
-        <input class="header__search" type="text" placeholder="SEARCH PROJECTS">
-        <div class="header__error">Project not found</div>
-      </div>
-      <button class="header__btn header__btn-contacts btn-reset">
-        Contacts
-      </button>
     </div>
   </nav>
-</div>
+  <div>
+
+  </div>
+</header>
 
     <main class="main">
       <div class="hero container flex">
