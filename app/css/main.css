@@ -14,6 +14,7 @@
   --official-color: #4ca3ffff;
   --ika-color: #f1285c;
   --wal-color: #99efe4;
+  --wal-text-color: #0c0f1d;
 }
 
 [data-theme=light] {
@@ -362,7 +363,7 @@ body.blurred .wrapper {
   background-color: var(--subaccent-color);
 }
 .header__btn-wal {
-  color: var(--bg-color);
+  color: var(--wal-text-color);
   background-color: var(--wal-color);
 }
 @media (any-hover: hover) {
@@ -375,7 +376,7 @@ body.blurred .wrapper {
   }
 }
 .header__btn-ika {
-  color: var(--bg-color);
+  color: var(--text-color);
   background-color: var(--ika-color);
 }
 @media (any-hover: hover) {
@@ -718,7 +719,7 @@ body.blurred .wrapper {
   border-radius: 8px;
   padding: 20px;
   width: 300px;
-  height: 415px;
+  min-height: 415px;
   color: var(--text-color);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

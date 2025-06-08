@@ -1503,6 +1503,45 @@ const projects = [{
   points: "Points",
   soon: null,
   date: "2024-06-04"
+}, {
+  name: "Artinals Labs",
+  category: "Infrastructure, RWA",
+  description: "A platform for tokenizing real-world and digital assets with a focus on usability, security, and liquidity. Enables no-code creation and management of tokens using the ART-20 standard and Mintera tools.",
+  site: "https://artinals.com/",
+  x: "https://x.com/artinalslabs",
+  discord: null,
+  logo: "img/logo-artinalslabs.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-06"
+}, {
+  name: "Siamese",
+  category: "LST, DeFi",
+  description: "A liquid staking platform that allows users to stake tokens and receive liquidity tokens in return for further use. It combines base yield with additional earning opportunities.",
+  site: "https://siameseprotocol.com/",
+  x: "https://x.com/SiameseProtocol",
+  discord: "https://discord.com/invite/wrGB8GnJ8E",
+  logo: "img/logo-siamese.webp",
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-06-07"
+}, {
+  name: "Sui Rewards Me",
+  category: "Launchpad, DeFi",
+  description: "Decentralized platform focused on rewards. Projects can launch tokens with royalties and custom tokenomics.",
+  site: "https://suirewards.me/",
+  x: "https://x.com/SuiRewardsMe",
+  discord: "https://discord.com/invite/qqP2RNrJGE",
+  logo: "img/logo-suirewardsme.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-08"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
