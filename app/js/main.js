@@ -30686,7 +30686,7 @@ const projects = [{
 }, {
   id: "19",
   name: "Bluefin",
-  category: "DeFi, Perpetual",
+  category: "DeFi, Perpetual, Lending",
   description: "High-performance DEX for perpetual derivatives with CEX-like experience.",
   site: "https://bluefin.io/",
   x: "https://x.com/bluefinapp",
@@ -30694,7 +30694,7 @@ const projects = [{
   logo: "img/logo-bluefin.webp",
   drop: null,
   testnet: null,
-  points: null,
+  points: "Points",
   soon: null,
   date: "2024-04-01"
 }, {
@@ -32069,6 +32069,48 @@ const projects = [{
   points: null,
   soon: null,
   date: "2024-06-08"
+}, {
+  id: "118",
+  name: "Nemo",
+  category: "DeFi",
+  description: "Yield tokenization protocol that transforms future yield into tradable assets, enabling fixed-rate lending, hedging, and advanced DeFi strategies.",
+  site: "https://www.nemoprotocol.com/",
+  x: "https://x.com/nemoprotocol",
+  discord: "https://discord.com/invite/Z4tEPGYd8D",
+  logo: "img/logo-nemo.webp",
+  drop: null,
+  testnet: null,
+  points: "Points",
+  soon: null,
+  date: "2024-06-10"
+}, {
+  id: "119",
+  name: "Loftus",
+  category: "DEX Tools, Others",
+  description: "A trading and sniping bot. Enables automated trading and quick token sniping in early stages. Initially launching via Telegram, with plans for a web application.",
+  site: null,
+  x: "https://x.com/Loftusbotsui",
+  discord: "https://discord.gg/4HtvFecA",
+  logo: "img/logo-loftus.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: "Soon",
+  date: "2024-06-11"
+}, {
+  id: "120",
+  name: "Pictor Network",
+  category: "DePin, AI",
+  description: "Decentralized GPU network for rendering and AI.",
+  site: "https://pictor.network/",
+  x: "https://x.com/pictor_network",
+  discord: "https://discord.com/invite/5RHMK9xF4x",
+  logo: "img/logo-pictornetwork.webp",
+  drop: null,
+  testnet: null,
+  points: null,
+  soon: null,
+  date: "2024-06-11"
 }];
 
 // Функция перемещения к последнему добавленному проекту на сайт
@@ -32159,8 +32201,11 @@ function generateProjectCards(projectsToRender) {
         </ul>
         <div class="project__social-like" data-id="${project.id}" tabindex="0">
           <span class="project__social-like-count">0</span>
-          <svg class="project__social-icon project__social-icon-like">
-            <use xlink:href="img/sprite.svg#logo-thumbs-up"></use>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="project__social-icon project__social-icon-like lucide lucide-thumbs-up-icon lucide-thumbs-up">
+            <path d="M7 10v12"/>
+            <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>
           </svg>
         </div>
       </div>
@@ -32417,9 +32462,6 @@ const donateBtn = document.getElementById('donateBtn');
 const walletAddress = '0xfc6b1e4fa152b77edbac464dfd444ec275206f77f245eab0328e99e85a75ff77';
 let copiedTimeout;
 let isMobileTapToReveal = false;
-function isMobileDevice() {
-  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-}
 if (!isMobileDevice()) {
   donateBtn.addEventListener('mouseenter', () => {
     if (!donateBtn.classList.contains('show-copied')) {
@@ -32481,32 +32523,27 @@ if (!isMobileDevice()) {
     }
   });
 }
-if (!isMobileDevice()) {
-  donateBtn.addEventListener('mouseenter', () => {
-    if (!donateBtn.classList.contains('show-copied')) {
-      donateBtn.classList.add('show-wallet');
-    }
-  });
-  donateBtn.addEventListener('mouseleave', () => {
-    if (!donateBtn.classList.contains('show-copied')) {
-      donateBtn.classList.remove('show-wallet');
-    }
-  });
-  donateBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(walletAddress).then(() => {
-      donateBtn.classList.remove('show-wallet');
-      donateBtn.classList.add('show-copied');
-      clearTimeout(copiedTimeout);
-      copiedTimeout = setTimeout(() => {
-        donateBtn.classList.remove('show-copied');
-        donateBtn.classList.remove('show-wallet');
-        donateBtn.blur();
-      }, 1000);
-    }).catch(err => {
-      console.error('Clipboard copy failed:', err);
-    });
-  });
+
+// Реализация поведения кнопок ika и walrus на мобильной версии
+function isMobileDevice() {
+  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 }
+document.querySelectorAll('[data-soon-btn]').forEach(btn => {
+  const originalText = btn.getAttribute('data-label') || btn.textContent;
+  btn.addEventListener('click', () => {
+    if (!isMobileDevice()) return;
+    if (!btn.classList.contains('soon-active')) {
+      btn.textContent = 'Soon';
+      btn.classList.add('soon-active');
+      btn.style.opacity = '0.3';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove('soon-active');
+        btn.style.opacity = '';
+      }, 1000);
+    }
+  });
+});
 
 // Изменение числа проектов на странице при добавлении в массив
 document.addEventListener("DOMContentLoaded", () => {
@@ -32543,6 +32580,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Функционал переключения контента при нажатии кнопок walrus и ika
+// document.addEventListener('DOMContentLoaded', () => {
+//   const main = document.querySelector('main.main');
+
+//   document.querySelectorAll('.header__btn').forEach(btn => {
+//     btn.addEventListener('click', () => {
+//       const label = btn.getAttribute('data-label').toLowerCase();
+//       const pageUrl = `page-${label}.html`;
+
+//       fetch(pageUrl)
+//         .then(response => {
+//           if (!response.ok) throw new Error(`Не удалось загрузить ${pageUrl}`);
+//           return response.text();
+//         })
+//         .then(html => {
+//           main.innerHTML = html;
+//         })
+//         .catch(err => {
+//           console.error(err);
+//           main.innerHTML = `<p>Ошибка загрузки контента: ${label}</p>`;
+//         });
+//     });
+//   });
+// });
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map

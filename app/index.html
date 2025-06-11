@@ -9,8 +9,8 @@
   <meta name="theme-color" content="#111111">
   <title>Sui Eco Base</title>
   <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css?v=1.0.44">
-  <script defer src="js/main.js?v=1.0.44"></script>
+  <link rel="stylesheet" href="css/main.css?v=1.0.55">
+  <script defer src="js/main.js?v=1.0.55"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPG30G7670"></script>
   <script>
@@ -36,10 +36,10 @@
       </form>
     </div>
     <div class="header__bottom-content flex">
-      <button class="header__btn header__btn-wal btn-reset" disabled>
+      <button class="header__btn header__btn-wal btn-reset" data-soon-btn data-label="Walrus">
         Walrus
       </button>
-      <button class="header__btn header__btn-ika btn-reset" disabled>
+      <button class="header__btn header__btn-ika btn-reset" data-soon-btn data-label="Ika">
         Ika
       </button>
       <button class="header__btn header__btn-contacts btn-reset">
@@ -52,9 +52,6 @@
       </button>
     </div>
   </nav>
-  <div>
-
-  </div>
 </header>
 
     <main class="main">
@@ -71,16 +68,13 @@
     </p>
     <div class="hero__wrapper">
       <div class="hero__count">
-        <div class="hero__number">
-          314
-        </div>
+        <div class="hero__number"></div>
         <div class="hero__total">
           Total projects
         </div>
       </div>
       <button class="hero__btn btn-reset">
         <div class="hero__name">
-          Full Sail
           <svg class="hero__icon">
             <use xlink:href="img/sprite.svg#icon-fire"></use>
           </svg>
@@ -253,8 +247,6 @@
     <ul class="project__card-list list-reset flex"></ul>
     <button class="project__card-btn btn-reset"></button>
   </div>
-</ul>
-
 </div>
 
     </main>
